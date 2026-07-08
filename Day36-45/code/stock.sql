@@ -5,13 +5,13 @@ USE `stock`;
 DROP TABLE IF EXISTS `tb_baba_stock`;
 
 CREATE TABLE `tb_baba_stock` (
-  `stock_id` bigint unsigned NOT NULL AUTO_INCREMENT COMMENT '编号',
-  `trade_date` date NOT NULL COMMENT '交易日',
-  `high_price` decimal(16,6) NOT NULL COMMENT '最高价',
-  `low_price` decimal(16,6) NOT NULL COMMENT '最低价',
-  `open_price` decimal(16,6) NOT NULL COMMENT '开盘价',
-  `close_price` decimal(16,6) NOT NULL COMMENT '收盘价',
-  `trade_volume` bigint unsigned NOT NULL COMMENT '交易量',
+  `stock_id` bigint unsigned NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `trade_date` date NOT NULL COMMENT 'trading date',
+  `high_price` decimal(16,6) NOT NULL COMMENT 'high price',
+  `low_price` decimal(16,6) NOT NULL COMMENT 'low price',
+  `open_price` decimal(16,6) NOT NULL COMMENT 'opening price',
+  `close_price` decimal(16,6) NOT NULL COMMENT 'closing price',
+  `trade_volume` bigint unsigned NOT NULL COMMENT 'trading volume',
   PRIMARY KEY (`stock_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

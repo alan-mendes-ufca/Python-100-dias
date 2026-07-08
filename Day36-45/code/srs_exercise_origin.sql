@@ -1,51 +1,51 @@
--- 查询所有学生信息
+-- Query all student records
 
--- 查询所有课程名称及学分(投影和别名)
+-- Query all course names and credits (projection and alias)
 
--- 查询所有女学生的姓名和出生日期(筛选)
+-- Query the names and birth dates of all female students (filtering)
 
--- 查询所有80后学生的姓名、性别和出生日期(筛选)
+-- Query the name, sex, and birth date of students born in the 1980s (filtering)
 
--- 查询姓”杨“的学生姓名和性别(模糊)
+-- Query the name and sex of students whose surname is Yang (pattern matching)
 
--- 查询姓”杨“名字两个字的学生姓名和性别(模糊)
+-- Query Yang-surname students with two-character names (pattern matching)
 
--- 查询姓”杨“名字三个字的学生姓名和性别(模糊)
+-- Query Yang-surname students with three-character names (pattern matching)
 
--- 查询名字中有”不“字或“嫣”字的学生的姓名(模糊)
+-- Query students whose names contain a target character (pattern matching)
 
--- 查询没有录入家庭住址的学生姓名(空值)
+-- Query students without a recorded home address (NULL handling)
 
--- 查询录入了家庭住址的学生姓名(空值)
+-- Query students with a recorded home address (NULL handling)
 
--- 查询学生选课的所有日期(去重)
+-- Query all course-selection dates (deduplication)
 
--- 查询学生的家庭住址(去重)
+-- Query student home addresses (deduplication)
 
--- 查询男学生的姓名和生日按年龄从大到小排列(排序)
+-- Query male student names and birthdays ordered by age descending (sorting)
 
--- 查询年龄最大的学生的出生日期(聚合函数)
+-- Query the birth date of the oldest student (aggregate function)
 
--- 查询年龄最小的学生的出生日期(聚合函数)
+-- Query the birth date of the youngest student (aggregate function)
 
--- 查询男女学生的人数(分组和聚合函数)
+-- Query the number of male and female students (grouping and aggregation)
 
--- 查询课程编号为1111的课程的平均成绩(筛选和聚合函数)
+-- Query the average score for course 1111 (filtering and aggregation)
 
--- 查询学号为1001的学生所有课程的平均分(筛选和聚合函数)
+-- Query the average score across all courses for student 1001
 
--- 查询每个学生的学号和平均成绩(分组和聚合函数)
+-- Query each student's id and average score
 
--- 查询平均成绩大于等于90分的学生的学号和平均成绩
+-- Query students whose average score is at least 90
 
--- 查询年龄最大的学生的姓名(子查询)
+-- Query the name of the oldest student (subquery)
 
--- 查询年龄最大的学生姓名和年龄(子查询+运算)
+-- Query the name and age of the oldest student (subquery + calculation)
 
--- 查询选了两门以上的课程的学生姓名(子查询/分组条件/集合运算)
+-- Query students who selected more than two courses
 
--- 查询学生姓名、课程名称以及成绩(连接查询)
+-- Query student name, course name, and score (join)
 
--- 查询选课学生的姓名和平均成绩(子查询和连接查询)
+-- Query the names and average scores of students who selected courses
 
--- 查询每个学生的姓名和选课数量(左外连接和子查询)
+-- Query each student's name and course count (left join + subquery)

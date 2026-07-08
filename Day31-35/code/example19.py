@@ -1,17 +1,6 @@
 """
-扩展性系统性能
-- 垂直扩展 - 增加单节点处理能力
-- 水平扩展 - 将单节点变成多节点（读写分离/分布式集群）
-并发编程 - 加速程序执行 / 改善用户体验
-耗时间的任务都尽可能独立的执行，不要阻塞代码的其他部分
-- 多线程
-1. 创建Thread对象指定target和args属性并通过start方法启动线程
-2. 继承Thread类并重写run方法来定义线程执行的任务
-3. 创建线程池对象ThreadPoolExecutor并通过submit来提交要执行的任务
-第3种方式可以通过Future对象的result方法在将来获得线程的执行结果
-也可以通过done方法判定线程是否执行结束
-- 多进程
-- 异步I/O
+Scalability and concurrent programming.
+This example uses a thread pool to generate thumbnails in parallel.
 """
 import glob
 import os
@@ -60,7 +49,7 @@ def gen_thumbnail(infile):
 #     for t in threads:
 #         t.join()
 #     end = time.time()
-#     print(f'耗时: {end - start}秒')
+#     print(f'Elapsed: {end - start} sec')
 
 
 def main():
@@ -68,24 +57,21 @@ def main():
     futures = []
     start = time.time()
     for infile in glob.glob('images/*'):
-        # submit方法是非阻塞式的方法 
-        # 即便工作线程数已经用完，submit方法也会接受提交的任务 
+        # `submit` is non-blocking.
+        # Even if all workers are busy, the task is still accepted.
         future = pool.submit(gen_thumbnail, infile)
         futures.append(future)
     for future in futures:
-        # result方法是一个阻塞式的方法 如果线程还没有结束
-        # 暂时取不到线程的执行结果 代码就会在此处阻塞
+        # `result` is blocking while the task is still running.
         future.result()
     end = time.time()
-    print(f'耗时: {end - start}秒')
-    # shutdown也是非阻塞式的方法 但是如果已经提交的任务还没有执行完
-    # 线程池是不会停止工作的 shutdown之后再提交任务就不会执行而且会产生异常
+    print(f'Elapsed: {end - start} sec')
+    # `shutdown` is also non-blocking, but the pool waits for submitted work.
     pool.shutdown()
 
 
 if __name__ == '__main__':
     main()
-
 
 
 

@@ -1,7 +1,6 @@
 """
-装饰类的装饰器 - 单例模式 - 一个类只能创建出唯一的对象
-上下文语法：
-__enter__ / __exit__
+A class decorator implementing the singleton pattern.
+A singleton class can create only one instance.
 """
 import threading
 
@@ -9,7 +8,7 @@ from functools import wraps
 
 
 def singleton(cls):
-    """单例装饰器"""
+    """Singleton decorator."""
     instances = {}
     lock = threading.Lock()
 
@@ -37,8 +36,8 @@ class President():
 
 def main():
     print(President.__name__)
-    p1 = President('特朗普', '美国')
-    p2 = President('奥巴马', '美国')
+    p1 = President('Trump', 'USA')
+    p2 = President('Obama', 'USA')
     print(p1 == p2)
     print(p1)
     print(p2)

@@ -1,7 +1,7 @@
 """
-装饰器 - 装饰器中放置的通常都是横切关注（cross-concern）功能
-所谓横切关注功能就是很多地方都会用到但跟正常业务又逻辑没有必然联系的功能
-装饰器实际上是实现了设计模式中的代理模式 - AOP（面向切面编程）
+Decorators usually host cross-cutting concerns.
+These are features used in many places but separate from the core business logic.
+Decorators are a practical form of the proxy pattern and aspect-oriented programming.
 """
 from functools import wraps
 from random import randint
@@ -27,12 +27,12 @@ def record(output):
 
 
 def output_to_console(fname, duration):
-    print('%s: %.3f秒' % (fname, duration))
+    print('%s: %.3f sec' % (fname, duration))
 
 
 def output_to_file(fname, duration):
     with open('log.txt', 'a') as file_stream:
-        file_stream.write('%s: %.3f秒\n' % (fname, duration))
+        file_stream.write('%s: %.3f sec\n' % (fname, duration))
 
 
 def output_to_db(fname, duration):
@@ -58,7 +58,7 @@ def main():
         # print(random_delay.__name__)
         random_delay(3, 5)
     # for _ in range(3):
-    #     # 取消掉装饰器
+    #     # Remove the decorator
     #     random_delay.__wrapped__(3, 5)
 
 

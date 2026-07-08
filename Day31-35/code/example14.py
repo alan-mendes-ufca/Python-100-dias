@@ -1,7 +1,6 @@
 """
-面向对象
-枚举 - 一个变量的值只有有限个选择，最适合的类型就是枚举
-通过枚举我们可以定义符号常量，符号常量优于字面常量
+Object-oriented example using enums.
+An enum is ideal when a value must come from a fixed set of choices.
 """
 from enum import Enum, unique
 
@@ -10,7 +9,7 @@ import random
 
 @unique
 class Suite(Enum):
-    """花色（枚举）"""
+    """Card suit."""
     SPADE, HEART, CLUB, DIAMOND = range(4)
 
     def __lt__(self, other):
@@ -18,7 +17,7 @@ class Suite(Enum):
 
 
 class Card():
-    """牌"""
+    """Playing card."""
     
     def __init__(self, suite, face):
         self.suite = suite
@@ -35,7 +34,7 @@ class Card():
 
 
 class Poker():
-    """扑克"""
+    """Deck of cards."""
     
     def __init__(self):
         self.index = 0
@@ -44,45 +43,45 @@ class Poker():
                       for face in range(1, 14)]
 
     def shuffle(self):
-        """洗牌"""
+        """Shuffle the deck."""
         self.index = 0
         random.shuffle(self.cards)
 
     def deal(self):
-        """发牌"""
+        """Deal one card."""
         card = self.cards[self.index]
         self.index += 1
         return card
 
     @property
     def has_more(self):
-        """是否有更多的牌"""
+        """Whether there are more cards."""
         return self.index < len(self.cards)
 
 
 class Player():
-    """玩家"""
+    """Player."""
 
     def __init__(self, name):
         self.name = name
         self.cards = []
 
     def get_card(self, card):
-        """摸牌"""
+        """Take one card."""
         self.cards.append(card)
 
     def arrange(self):
-        """整理手上的牌"""
+        """Sort the cards in hand."""
         self.cards.sort(key=lambda card: (card.suite, card.face))
 
 
 def main():
-    """主函数"""
+    """Program entry point."""
     poker = Poker()
     poker.shuffle()
     players = [
-        Player('东邪'), Player('西毒'), 
-        Player('南帝'), Player('北丐')
+        Player('East Heretic'), Player('West Venom'),
+        Player('South Emperor'), Player('North Beggar')
     ]
     while poker.has_more:
         for player in players:

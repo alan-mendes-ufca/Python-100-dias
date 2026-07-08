@@ -1,20 +1,21 @@
 """
-哈希摘要 - 数字签名/指纹 - 单向哈希函数（没有反函数不可逆）
-应用领域：
-1. 数据库中的用户敏感信息保存成哈希摘要
-2. 给数据生成签名验证数据没有被恶意篡改
-3. 云存储服务的秒传功能（去重功能）
+Hash digests, digital signatures, and one-way hash functions.
+
+Applications:
+1. Storing sensitive data as digests
+2. Signing data to detect tampering
+3. Deduplication in cloud storage
 """
 
 
 class StreamHasher():
-    """摘要生成器"""
+    """Digest generator."""
 
     def __init__(self, algorithm='md5', size=4096):
-        """初始化方法
+        """Initializer.
         @params:
-            algorithm - 哈希摘要算法
-            size - 每次读取数据的大小
+            algorithm - hashing algorithm
+            size - read chunk size
         """
         self.size = size
         cls = getattr(__import__('hashlib'), algorithm.lower())
@@ -22,7 +23,7 @@ class StreamHasher():
     
 
     def digest(self, file_stream):
-        """生成十六进制的摘要字符串"""
+        """Generate a hexadecimal digest string."""
         # data = file_stream.read(self.size)
         # while data:
         #     self.hasher.update(data)
@@ -36,7 +37,7 @@ class StreamHasher():
 
 
 def main():
-    """主函数"""
+    """Program entry point."""
     hasher1 = StreamHasher()
     hasher2 = StreamHasher('sha1')
     hasher3 = StreamHasher('sha256')

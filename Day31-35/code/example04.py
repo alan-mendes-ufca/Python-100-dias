@@ -1,9 +1,9 @@
 """
-贪婪法：在对问题求解时，总是做出在当前看来是最好的选择，
-不追求最优解，快速找到满意解。
+Greedy method: always make the locally best choice.
+It may not be globally optimal, but it often finds a good answer quickly.
 """
 class Thing(object):
-    """物品"""
+    """Item."""
 
     def __init__(self, name, price, weight):
         self.name = name
@@ -12,18 +12,18 @@ class Thing(object):
 
     @property
     def value(self):
-        """价格重量比"""
+        """Price-to-weight ratio."""
         return self.price / self.weight
 
 
 def input_thing():
-    """输入物品信息"""
+    """Read one item from standard input."""
     name_str, price_str, weight_str = input().split()
     return name_str, int(price_str), int(weight_str)
 
 
 def main():
-    """主函数"""
+    """Program entry point."""
     max_weight, num_of_things = map(int, input().split())
     all_things = []
     for _ in range(num_of_things):
@@ -33,10 +33,10 @@ def main():
     total_price = 0
     for thing in all_things:
         if total_weight + thing.weight <= max_weight:
-            print(f'小偷拿走了{thing.name}')
+            print(f'The thief takes {thing.name}')
             total_weight += thing.weight
             total_price += thing.price
-    print(f'总价值: {total_price}美元')
+    print(f'Total value: ${total_price}')
 
 
 if __name__ == '__main__':

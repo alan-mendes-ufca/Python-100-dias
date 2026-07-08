@@ -1,9 +1,6 @@
 """
-多重继承 - 一个类有两个或者两个以上的父类
-MRO - 方法解析顺序 - Method Resolution Order
-当出现菱形继承（钻石继承）的时候，子类到底继承哪个父类的方法
-Python 2.x - 深度优先搜索
-Python 3.x - C3算法 - 类似于广度优先搜索
+Multiple inheritance and method resolution order (MRO).
+This example shows the diamond-inheritance shape and Python 3's C3 MRO.
 """
 class A():
 
@@ -26,7 +23,7 @@ class D(B, C):
 
 
 class SetOnceMappingMixin():
-    """自定义混入类"""
+    """Custom mixin class."""
     __slots__ = ()
 
     def __setitem__(self, key, value):
@@ -36,7 +33,7 @@ class SetOnceMappingMixin():
 
 
 class SetOnceDict(SetOnceMappingMixin, dict):
-    """自定义字典"""
+    """Custom dictionary."""
     pass
 
 
