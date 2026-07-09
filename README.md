@@ -6,7 +6,7 @@
 >
 > <img src="res/pay_qr_code.png" style="zoom:32%;">
 >
-> Alguns vídeos correspondentes a este projeto já foram sincronizados com [Bilíbili](https://space.bilibili.com/1177252794). Se você estiver interessado, curta, jogue uma moeda e siga. Dê-lhe o suporte triplo com um clique!
+> Alguns vídeos correspondentes a este projeto já foram sincronizados com [Bilibili](https://space.bilibili.com/1177252794). Se você estiver interessado, curta, jogue uma moeda e siga. Dê-lhe o suporte triplo com um clique!
 
 ### Áreas de aplicação Python e análise de desenvolvimento de carreira
 
@@ -65,10 +65,10 @@ Várias sugestões para iniciantes:
 2. Olá, mundo
 3. Comentando seu código
 
-#### Dia 03 - [Variáveis ​​em Python](./Day01-20/03.variables-in-python.md)
+#### Dia 03 - [Variáveis em Python](./Day01-20/03.variables-in-python.md)
 
 1. Algum bom senso básico
-2. Variáveis ​​e tipos
+2. Variáveis e tipos
 3. Nomenclatura de variáveis
 4. Usando variáveis
 
@@ -114,7 +114,7 @@ Várias sugestões para iniciantes:
 
 1. Criando listas
 2. Listar operações
-3. Atravessando elementos
+3. Percorrendo elementos
 
 #### Dia 09 - [Estrutura de dados comum: lista - 2](./Day01-20/09.lists-2.md)
 
@@ -136,16 +136,16 @@ Várias sugestões para iniciantes:
 #### Dia 11 - [Estrutura de dados comum: String](./Day01-20/11.strings.md)
 
 1. Definindo cadeias de caracteres
-   - Personagens de fuga
-   - Cordas brutas
+   - Caracteres de escape
+   - Strings brutas
    - Representações de caracteres especiais
 2. Operações de string
    - Concatenação e repetição
    - Operações de comparação
-   - Operações de adesão
+   - Operações de pertinência
    - Obtendo o comprimento da string
    - Indexação e fatiamento
-3. Percorrendo personagens
+3. Iterando sobre caracteres
 4. Métodos de string
    - Conversão de caso
    - Operações de pesquisa
@@ -160,9 +160,9 @@ Várias sugestões para iniciantes:
 #### Dia 12 - [Estrutura de dados comum: conjunto](./Day01-20/12.sets.md)
 
 1. Criando conjuntos
-2. Variáveis ​​​​de elementos
+2. Variáveis de elementos
 3. Definir operações
-   - Operações de adesão
+   - Operações de pertinência
    - Operações binárias
    - Operações de comparação
 4. Definir métodos
@@ -283,7 +283,7 @@ Várias sugestões para iniciantes:
 
 1. Conceitos introdutórios
 2. Processando imagens com Pillow
-3. Desenhando com Almofada
+3. Desenhando com Pillow
 
 #### Dia 29 - [Envio de e-mail e SMS com Python](./Day21-30/29.sending-email-and-sms.md)
 
@@ -326,7 +326,7 @@ Várias sugestões para iniciantes:
 3. Utilitários no Linux
 4. O sistema de arquivos Linux
 5. Aplicações do editor Vim
-6. Variáveis ​​de ambiente e programação shell
+6. Variáveis de ambiente e programação shell
 7. Instalação de software e configuração de serviço
 8. Acesso e gerenciamento de rede
 9. Outros conteúdos relacionados
@@ -418,7 +418,7 @@ Várias sugestões para iniciantes:
 7. Liberando conexões
 8. Escrevendo scripts ETL
 
-#### Dia 45 - [Colmeia na prática](./Day36-45/45.hive-in-practice.md)
+#### Dia 45 - [Hive na prática](./Day36-45/45.hive-in-practice.md)
 
 1. Visão geral do Hive
 2. Configuração do ambiente
@@ -558,7 +558,7 @@ Várias sugestões para iniciantes:
 
 #### Dia 64 - [Usando Selenium para buscar conteúdo dinâmico da Web](./Day61-65/64.selenium-for-dynamic-content.md)
 
-1. Instalando Selênio
+1. Instalando Selenium
 2. Carregando páginas
 3. Encontrar elementos e simular o comportamento do usuário
 4. Esperas implícitas e esperas explícitas
@@ -615,7 +615,7 @@ Várias sugestões para iniciantes:
    - Operações entre arrays
 2. Funções unárias universais
 3. Funções binárias universais
-4. Radiodifusão
+4. Broadcasting
 5. Funções NumPy comuns
 
 #### Dia 71 - [Aplicações de NumPy - 4](./Day66-80/71.numpy-applications-4.md)
@@ -697,7 +697,7 @@ Várias sugestões para iniciantes:
 
 #### Dia 80 - [Visualização de dados - 3](./Day66-80/80.data-visualization-3.md)
 
-1. Nascido no mar
+1. Seaborn
 2. Gráficos
 
 ### Dia 81~90 - Aprendizado de Máquina
@@ -794,38 +794,38 @@ Várias sugestões para iniciantes:
 
 1. Modelos de processos de software
    - Modelo de processo clássico (modelo em cascata)
-     - Feasibility analysis (study whether to do it or not), output: "Feasibility Analysis Report"
-     - Requirements analysis (study what to build), output: "Requirements Specification" and product-interface prototypes
-     - High-level design and detailed design, output: conceptual model diagrams (ER diagrams), physical model diagrams, class diagrams, sequence diagrams, and so on
-     - Coding / testing
-     - Release / maintenance
+     - Análise de viabilidade (estudar se o projeto deve ou não ser feito), saída: "Relatório de Análise de Viabilidade"
+     - Análise de requisitos (estudar o que deve ser construído), saída: "Especificação de Requisitos" e protótipos de interface do produto
+     - Design de alto nível e design detalhado, saída: diagramas de modelo conceitual (diagramas ER), diagramas de modelo físico, diagramas de classes, diagramas de sequência e assim por diante
+     - Codificação / testes
+     - Lançamento / manutenção
 
-     The biggest disadvantage of the waterfall model is that it cannot embrace changing requirements. You only see the product after the entire process is finished, which lowers team morale.
-   - Desenvolvimento ágil (Scrum) – product Owner, Scrum Master, desenvolvedores – Sprint
-     - Product backlog (user stories, product prototypes)
-     - Planning meetings (estimation and budgeting)
-     - Daily development (stand-up meetings, Pomodoro technique, pair programming, test-first development, code refactoring, and so on)
-     - Bug fixing (issue description, reproduction steps, tester, assignee)
-     - Version releases
-     - Review meetings (showcase, with user participation)
-     - Retrospective meetings (summarize the current iteration cycle)
+     A maior desvantagem do modelo em cascata é que ele não lida bem com mudanças nos requisitos. O produto só aparece depois que todo o processo termina, o que reduz a motivação da equipe.
+   - Desenvolvimento ágil (Scrum) – Product Owner, Scrum Master, desenvolvedores – Sprint
+     - Backlog do produto (histórias de usuário, protótipos do produto)
+     - Reuniões de planejamento (estimativa e orçamento)
+     - Desenvolvimento diário (reuniões rápidas, técnica Pomodoro, programação em par, desenvolvimento orientado a testes, refatoração de código e assim por diante)
+     - Correção de bugs (descrição do problema, passos de reprodução, testador, responsável)
+     - Lançamentos de versão
+     - Reuniões de revisão (demonstração, com participação dos usuários)
+     - Reuniões de retrospectiva (resumo do ciclo de iteração atual)
 
-     > Supplement: Manifesto for Agile Software Development
+     > Complemento: Manifesto para o Desenvolvimento Ágil de Software
      >
-     > - **Individuals and interactions** over processes and tools
-     > - **Working software** over comprehensive documentation
-     > - **Customer collaboration** over contract negotiation
-     > - **Responding to change** over following a plan
+     > - **Indivíduos e interações** mais que processos e ferramentas
+     > - **Software em funcionamento** mais que documentação abrangente
+     > - **Colaboração com o cliente** mais que negociação de contratos
+     > - **Responder a mudanças** mais que seguir um plano
      >
      ![](./res/agile-scrum-sprint-cycle.png)
      >
-     > Roles: product owner (decides what to build and has the authority to finalize requirements), team lead (solves various problems, focuses on improving the way the team works, and shields the development team from outside interference), development team (project executors, specifically developers and testers).
+     > Papéis: product owner (decide o que será construído e tem autoridade para fechar requisitos), líder da equipe (resolve problemas diversos, melhora a forma de trabalho da equipe e protege o time de desenvolvimento de interferências externas) e equipe de desenvolvimento (executores do projeto, especialmente desenvolvedores e testadores).
      >
-     > Preparatory work: business case and funding, contracts, vision, initial product requirements, initial release plan, equity allocation, team formation.
+     > Trabalho preparatório: caso de negócio e financiamento, contratos, visão, requisitos iniciais do produto, plano inicial de lançamento, divisão societária e formação da equipe.
      >
-     > Agile teams usually have 8-10 people.
+     > Equipes ágeis geralmente têm de 8 a 10 pessoas.
      >
-     > Workload estimation: quantify development tasks, including prototypes, logo design, UI design, frontend development, and so on. Break each item down to the smallest task unit possible; the standard is that the smallest task should not take more than two days. Then estimate the total project duration. Put each task on the task board, which is divided into three parts: `to do`, `in progress`, and `done`.
+     > Estimativa de esforço: quantifique as tarefas de desenvolvimento, incluindo protótipos, design de logotipo, design de UI, desenvolvimento frontend e assim por diante. Divida cada item na menor unidade de tarefa possível; a referência é que a menor tarefa não deve levar mais de dois dias. Em seguida, estime a duração total do projeto. Coloque cada tarefa no quadro de tarefas, dividido em três partes: `a fazer`, `em andamento` e `concluído`.
 
 2. Construindo a equipe do projeto
    - Composição e funções da equipe
@@ -839,12 +839,12 @@ Várias sugestões para iniciantes:
    - Algumas "convenções" em Python (consulte [Convenções de programação Python – Como escrever código Python](./extras/Python-programming-conventions.md))
 
    - Fatores que afetam a legibilidade do código:
-     - Too few comments or no comments
-     - Code breaks the best practices of the language
-     - Anti-pattern programming (spaghetti code, copy-paste programming, arrogant programming, ...)
+     - Comentários insuficientes ou inexistentes
+     - Código que viola as boas práticas da linguagem
+     - Programação com antipadrões (código espaguete, programação por copiar e colar, programação arrogante, ...)
 
 3. Introdução às ferramentas de desenvolvimento de equipe
-   - Controle de versão: Git, Mercury
+   - Controle de versão: Git, Mercurial
    - Gerenciamento de defeitos: [Gitlab](https://about.gitlab.com/), [Redmine](http://www.redmine.org.cn/)
    - Ferramentas ágeis de circuito fechado: [ZenTao](https://www.zentao.net/), [JIRA](https://www.atlassian.com/software/jira/features)
    - Integração contínua: [Jenkins](https://jenkins.io/), [Travis-CI](https://travis-ci.org/)
@@ -882,7 +882,7 @@ Consulte [Problemas e soluções no desenvolvimento de projetos em equipe](./Day
 
    - Criando tabelas a partir de modelos (engenharia avançada)
 
-     For example, in a Django project you can create database tables with the commands below.
+     Por exemplo, em um projeto Django, você pode criar tabelas no banco de dados com os comandos abaixo.
 
      ```Shell
      python manage.py makemigrations app
@@ -895,7 +895,7 @@ Consulte [Problemas e soluções no desenvolvimento de projetos em equipe](./Day
 
    - Criação de modelos a partir de tabelas de banco de dados (engenharia reversa)
 
-     For example, in a Django project you can generate models with the command below.
+     Por exemplo, em um projeto Django, você pode gerar modelos com o comando abaixo.
 
      ```Shell
      python manage.py inspectdb > app/models.py
@@ -945,8 +945,8 @@ Consulte [Problemas e soluções no desenvolvimento de projetos em equipe](./Day
    - [Práticas recomendadas de API RESTful](http://www.ruanyifeng.com/blog/2018/10/restful-api-best-practices.html)
 2. Escrevendo documentação da interface API
    - [RAP2](http://rap2.taobao.org/)
-   - [ESTRUTURA](http://yapi.demo.qunar.com/)
-3. Aplicando [estrutura Django-REST](https://www.django-rest-framework.org/)
+   - [YApi](http://yapi.demo.qunar.com/)
+3. Aplicando [Django REST framework](https://www.django-rest-framework.org/)
 
 ##### Análise dos pontos-chave e difíceis do projeto
 
@@ -971,10 +971,10 @@ Consulte [Problemas e soluções no desenvolvimento de projetos em equipe](./Day
 3. Instalação e configuração de serviços Linux comuns
 4. Usando uWSGI/Gunicorn e Nginx
    - Comparação entre Gunicorn e uWSGI
-     - For simple applications that do not need a lot of customization, Gunicorn is a good choice. The learning curve of uWSGI is much steeper than Gunicorn, and Gunicorn's default parameters can already fit most applications.
-     - uWSGI supports heterogeneous deployment.
-     - Because Nginx itself supports uWSGI, in production Nginx and uWSGI are usually deployed together, and uWSGI is a full-featured and highly customizable WSGI middleware.
-     - In performance, Gunicorn and uWSGI are actually quite close.
+     - Para aplicações simples que não precisam de muita personalização, Gunicorn é uma boa escolha. A curva de aprendizado do uWSGI é muito mais íngreme que a do Gunicorn, e os parâmetros padrão do Gunicorn já atendem à maioria das aplicações.
+     - uWSGI oferece suporte a implantação heterogênea.
+     - Como o próprio Nginx oferece suporte a uWSGI, em produção Nginx e uWSGI geralmente são implantados juntos; o uWSGI é um middleware WSGI completo e altamente personalizável.
+     - Em desempenho, Gunicorn e uWSGI são bastante próximos.
 5. Implantando ambientes de teste e produção com tecnologia de virtualização (Docker)
 
 ##### Teste de desempenho
@@ -987,9 +987,9 @@ Consulte [Problemas e soluções no desenvolvimento de projetos em equipe](./Day
 
 1. Usando Shell e Python para testes automatizados
 2. Usando Selenium para testes automatizados
-   - IDE Selênio
-   - Selênio WebDriver
-   - Controle Remoto Selênio
+   - Selenium IDE
+   - Selenium WebDriver
+   - Selenium RC
 3. Introdução ao Robot Framework
 
 #### Dia 97: [Análise dos principais pontos técnicos para sites de comércio eletrônico](./Day91-100/97.ecommerce-site-architecture.md)

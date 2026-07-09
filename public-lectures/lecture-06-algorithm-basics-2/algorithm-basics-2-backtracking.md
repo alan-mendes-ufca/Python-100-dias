@@ -6,7 +6,7 @@ Esta palestra continua a série de algoritmos com recursão e retrocesso.
 
 Recursão significa definir ou resolver algo em termos de si mesmo.
 
-Exemplos usados ​​na palestra:
+Exemplos usados na palestra:
 
 - histórias autorreferenciais
 - definição fatorial recursiva

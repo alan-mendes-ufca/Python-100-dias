@@ -15,7 +15,7 @@ Recursos importantes cobertos incluem:
 - lendo CSV, Excel e SQL
 - lidando com valores ausentes
 - processamento categórico
-- variáveis ​​​​fictícias
+- variáveis dummy
 - descarte
 - transformações personalizadas
 - estatística descritiva
@@ -23,6 +23,6 @@ Recursos importantes cobertos incluem:
 - classificação e seleção Top-N
 - agrupamento e agregação
 - remodelagem, tabelas dinâmicas e tabelas cruzadas
-- tramando
+- plotando
 
 Esta nota funciona melhor como uma folha de referência para práticas práticas repetidas.

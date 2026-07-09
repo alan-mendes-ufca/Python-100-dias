@@ -22,6 +22,6 @@ A lição principal é que diferentes soluções para o mesmo problema podem var
 - velocidade
 - escalabilidade
 
-Exemplos como Fibonacci iterativo, Fibonacci recursivo e Fibonacci memorizado são usados ​​para motivar o pensamento algorítmico e a consciência da complexidade.
+Exemplos como Fibonacci iterativo, Fibonacci recursivo e Fibonacci memorizado são usados para motivar o pensamento algorítmico e a consciência da complexidade.
 
 O principal objetivo é treinar o hábito de comparar abordagens, em vez de tratar todas as respostas corretas como igualmente boas.

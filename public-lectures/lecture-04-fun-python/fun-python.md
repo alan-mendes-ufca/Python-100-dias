@@ -17,7 +17,7 @@ Instale-o com:
 pip install ipython
 ```
 
-### Processamento de imagem com travesseiro
+### Processamento de imagem com Pillow
 
 A palestra usa Pillow para demonstrar operações divertidas de imagem, como:
 
@@ -27,7 +27,7 @@ A palestra usa Pillow para demonstrar operações divertidas de imagem, como:
 - espelhamento
 - gerando miniaturas
 
-Fluxo de trabalho típico de travesseiro:
+Fluxo de trabalho típico de Pillow:
 
 ```python
 from PIL import Image, ImageFilter

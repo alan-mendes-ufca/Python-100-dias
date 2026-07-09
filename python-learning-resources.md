@@ -33,23 +33,23 @@ Muitos amigos procuram online recursos de aprendizagem relacionados ao Python, m
 #### Sites de recursos
 
 1. [Site oficial do Python](https://python.org) - baixe o interpretador Python, leia a documentação oficial, conheça as novidades da comunidade e assim por diante
-2. [Python on-line](https://www.online-python.com/), [Python-Fiddle](https://python-fiddle.com/), [Google Co.](https://colab.research.google.com/) - escreva e execute código Python online
+2. [Python on-line](https://www.online-python.com/), [Python-Fiddle](https://python-fiddle.com/), [Google Colab](https://colab.research.google.com/) - escreva e execute código Python online
 3. [Coddy](https://coddy.tech) - aprenda e pratique Python online, um pouco como o Duolingo para aprender línguas estrangeiras
-4. [Django](https://www.djangoproject.com/), [API rápida](https://fastapi.tiangolo.com/) sites oficiais - estruturas de desenvolvimento de API de serviço Python
+4. [Django](https://www.djangoproject.com/), [FastAPI](https://fastapi.tiangolo.com/) sites oficiais - estruturas de desenvolvimento de API de serviço Python
 5. Sites oficiais [NumPy](https://numpy.org/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/stable/) - as três grandes ferramentas de análise de dados Python
-6. Site oficial [polar](https://pola.rs/) - uma alternativa de alto desempenho aos pandas
-7. Sites oficiais [CuPy](https://cupy.dev/), [cuDF](https://github.com/rapidsai/cudf), [RÁPIDAS](https://rapids.ai/) - use GPU para acelerar a ciência matemática
-8. Sites oficiais [Scikit-aprender](https://scikit-learn.org/stable/), [PyTorch](https://pytorch.org/), [TensorFlow](https://www.tensorflow.org/), [Duro](https://keras.io/) - estruturas de aprendizado de máquina e aprendizado profundo
-9. Site oficial [Abraçando o rosto](https://huggingface.co/) - a biblioteca `transformers` fornece um grande número de modelos pré-treinados para ajudar no desenvolvimento de modelos de aprendizado profundo
+6. Site oficial [Polars](https://pola.rs/) - uma alternativa de alto desempenho aos pandas
+7. Sites oficiais [CuPy](https://cupy.dev/), [cuDF](https://github.com/rapidsai/cudf), [RAPIDS](https://rapids.ai/) - use GPU para acelerar a ciência matemática
+8. Sites oficiais [Scikit-learn](https://scikit-learn.org/stable/), [PyTorch](https://pytorch.org/), [TensorFlow](https://www.tensorflow.org/), [Keras](https://keras.io/) - estruturas de aprendizado de máquina e aprendizado profundo
+9. Site oficial [Hugging Face](https://huggingface.co/) - a biblioteca `transformers` fornece um grande número de modelos pré-treinados para ajudar no desenvolvimento de modelos de aprendizado profundo
 10. Site oficial [Kaggle](https://www.kaggle.com/) - uma plataforma de ciência de dados e aprendizado de máquina mundialmente famosa
 11. Site oficial [GitHub](https://github.com/) - a maior plataforma de hospedagem de código do mundo, com muitos repositórios e recursos de código de alta qualidade
 12. Site [YouTube](https://www.youtube.com/) - a maior plataforma de compartilhamento de vídeo do mundo, com muitos vídeos de aprendizagem excelentes
-13. Site [Bilíbili](https://www.bilibili.com/) - originalmente era uma plataforma ACG e agora também é uma plataforma de aprendizagem para jovens
+13. Site [Bilibili](https://www.bilibili.com/) - originalmente era uma plataforma ACG e agora também é uma plataforma de aprendizagem para jovens
 14. [MOOC da Universidade da China](https://www.icourse163.org/), [Sala de aula na nuvem NetEase](https://study.163.com/), [IMOOC](https://www.imooc.com/), [Udemy](), [Coursera](), [Udacity](), [edX](https://www.edx.org/) - plataformas de aprendizagem online
 15. [DeepLearning.ai](https://www.deeplearning.ai/) - uma plataforma de educação de aprendizagem profunda fundada por Andrew Ng
-16. [Código Leet](https://leetcode.cn/), [AgoraCoder](https://www.nowcoder.com/), [Classificação Hacker](https://www.hackerrank.com/), [codificador superior](https://www.topcoder.com/) - plataformas online de resolução de problemas e competição
+16. [LeetCode](https://leetcode.cn/), [NowCoder](https://www.nowcoder.com/), [HackerRank](https://www.hackerrank.com/), [TopCoder](https://www.topcoder.com/) - plataformas online de resolução de problemas e competição
 17. [Instituto de aprendizagem profunda NVIDIA](https://link.zhihu.com/?target=https%3A//www.nvidia.cn/training/), [DataCamp](https://link.zhihu.com/?target=https%3A//www.datacamp.com/) - possuem recursos de aprendizagem gratuitos e pagos
-18. [Tornando-seHuman.ai](https://link.zhihu.com/?target=https%3A//becominghuman.ai/) - há muitos tópicos de IA lá e algumas lindas folhas de dicas
+18. [BecomingHuman.ai](https://link.zhihu.com/?target=https%3A//becominghuman.ai/) - há muitos tópicos de IA lá e algumas lindas folhas de dicas
 
 ### Livros de referência de Python
 
