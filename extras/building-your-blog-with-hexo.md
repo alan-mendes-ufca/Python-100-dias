@@ -1,14 +1,14 @@
-## Building Your Own Blog with Hexo
+## Construindo seu próprio blog com Hexo
 
-This note introduces Hexo as a simple static-blog generator.
+Esta nota apresenta o Hexo como um gerador simples de blog estático.
 
-Typical workflow:
+Fluxo de trabalho típico:
 
-1. install Node.js
-2. install Hexo
-3. initialize a blog project
-4. write posts in Markdown
-5. generate static pages
-6. deploy to a hosting platform
+1. instalar o Node.js
+2. instalar o Hexo
+3. inicializar um projeto de blog
+4. escrever postagens em Markdown
+5. gerar páginas estáticas
+6. implantar em uma plataforma de hospedagem
 
-The value of a technical blog is not just publishing content. It is also a way to organize knowledge and build a long-term learning trail.
+O valor de um blog técnico não é apenas publicar conteúdo. É também uma forma de organizar o conhecimento e construir uma trilha de aprendizagem de longo prazo.

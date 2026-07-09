@@ -1,21 +1,21 @@
-## API Documentation Reference Example
+## Exemplo de referência de documentação de API
 
-This supplemental note shows what a practical API document should look like.
+Esta nota suplementar mostra como deve ser um documento prático de API.
 
-A good interface document usually includes:
+Um bom documento de interface geralmente inclui:
 
-- endpoint URL
-- HTTP method
-- owner / maintainer
-- version
-- purpose
-- request parameters
-- response examples
-- status codes
+- URL do terminal
+- Método HTTP
+- proprietário/mantenedor
+- versão
+- propósito
+- parâmetros de solicitação
+- exemplos de resposta
+- códigos de status
 
-The original example includes:
+O exemplo original inclui:
 
-1. user login
-2. sending an SMS verification code
+1. login do usuário
+2. enviando um código de verificação por SMS
 
-The main lesson is that API documentation should be specific enough that another engineer can implement or consume the interface without guessing.
+A lição principal é que a documentação da API deve ser específica o suficiente para que outro engenheiro possa implementar ou consumir a interface sem adivinhar.

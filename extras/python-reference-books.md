@@ -1,14 +1,14 @@
-## Recommended Python Books
+## Livros Python recomendados
 
-This document is a compact reading list for Python learners.
+Este documento é uma lista de leitura compacta para alunos de Python.
 
-Suggested categories:
+Categorias sugeridas:
 
-- beginner books
-- intermediate and advanced books
-- web-development books
-- crawling books
-- data-analysis books
-- machine-learning books
+- livros para iniciantes
+- livros intermediários e avançados
+- livros sobre desenvolvimento web
+- livros rastejantes
+- livros de análise de dados
+- livros sobre aprendizado de máquina
 
-The best approach is to match the book to your current stage rather than trying to read everything.
+A melhor abordagem é adequar o livro ao seu estágio atual, em vez de tentar ler tudo.

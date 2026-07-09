@@ -1,8 +1,6 @@
-"""
-Decorators usually host cross-cutting concerns.
-These are features used in many places but separate from the core business logic.
-Decorators are a practical form of the proxy pattern and aspect-oriented programming.
-"""
+"""Os decoradores geralmente hospedam preocupações transversais.
+Esses são recursos usados ​​em muitos lugares, mas separados da lógica central do negócio.
+Decoradores são uma forma prática do padrão proxy e da programação orientada a aspectos."""
 from functools import wraps
 from random import randint
 from time import time, sleep
@@ -59,7 +57,7 @@ def main():
         random_delay(3, 5)
     # for _ in range(3):
     #     # Remove the decorator
-    #     random_delay.__wrapped__(3, 5)
+    # random_delay.__wrapped__(3, 5)
 
 
 if __name__ == '__main__':

@@ -1,36 +1,36 @@
-## Fun Python
+## Python divertido
 
-This public-class note shows playful and beginner-friendly ways to explore Python.
+Esta nota de aula pública mostra maneiras divertidas e fáceis de explorar Python para iniciantes.
 
-### A Better Interactive Shell
+### Um shell interativo melhor
 
-The lecture recommends `ipython` because it offers:
+A palestra recomenda `ipython` porque oferece:
 
-- `?` and `??` for help
-- `!` for shell commands
-- tab completion
-- magic commands such as `%timeit`
+- `?` e `??` para obter ajuda
+- `!` para comandos shell
+- conclusão da guia
+- comandos mágicos como `%timeit`
 
-Install it with:
+Instale-o com:
 
 ```bash
 pip install ipython
 ```
 
-### Image Processing with Pillow
+### Processamento de imagem com travesseiro
 
-The lecture uses Pillow to demonstrate fun image operations such as:
+A palestra usa Pillow para demonstrar operações divertidas de imagem, como:
 
-- loading an image
-- applying filters
-- cropping and pasting
-- mirroring
-- generating thumbnails
+- carregando uma imagem
+- aplicando filtros
+- recortar e colar
+- espelhamento
+- gerando miniaturas
 
-Typical Pillow workflow:
+Fluxo de trabalho típico de travesseiro:
 
 ```python
 from PIL import Image, ImageFilter
 ```
 
-The main point is that Python can be used not only for serious backend or data work, but also for small visual and creative experiments that make learning more enjoyable.
+O ponto principal é que o Python pode ser usado não apenas para back-end sério ou trabalho de dados, mas também para pequenos experimentos visuais e criativos que tornam o aprendizado mais agradável.

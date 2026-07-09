@@ -1,17 +1,17 @@
-## Use a Function or a Complex Expression?
+## Use uma função ou uma expressão complexa?
 
-This essay explores a common readability question: should you pack logic into a single clever expression, or should you extract a helper function?
+Este ensaio explora uma questão comum de legibilidade: você deve agrupar a lógica em uma única expressão inteligente ou extrair uma função auxiliar?
 
-Using the "maximum of three numbers" example, it shows how code can evolve from:
+Usando o exemplo "máximo de três números", mostra como o código pode evoluir a partir de:
 
-- explicit multi-line logic
-- to ternary expressions
-- to overly compressed one-liners
-- to a cleaner helper function
+- lógica multilinha explícita
+- para expressões ternárias
+- para one-liners excessivamente compactados
+- para uma função auxiliar mais limpa
 
-The core lesson is simple:
+A lição principal é simples:
 
-- shorter is not always clearer
-- helper functions often improve readability and reuse
+- mais curto nem sempre é mais claro
+- funções auxiliares geralmente melhoram a legibilidade e a reutilização
 
-Python’s built-in `max` solves the example directly, but the broader design lesson remains useful.
+O `max` integrado do Python resolve o exemplo diretamente, mas a lição de design mais ampla permanece útil.

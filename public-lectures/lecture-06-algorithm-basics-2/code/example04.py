@@ -1,11 +1,11 @@
-"""Knight's tour."""
+"""Passeio do cavaleiro."""
 import sys
 
 SIZE = 8
 
 
 def display(board):
-    """Display the board."""
+    """Mostre o quadro."""
     for row in board:
         for col in row:
             print(f'{col}'.rjust(2, '0'), end=' ')
@@ -13,7 +13,7 @@ def display(board):
 
 
 def patrol(board, i=0, j=0, step=1):
-    """Try one knight's tour traversal."""
+    """Experimente a travessia de um cavaleiro."""
     if 0 <= i < SIZE and 0 <= j < SIZE and board[i][j] == 0:
         board[i][j] = step
         if step == SIZE * SIZE:
@@ -31,7 +31,7 @@ def patrol(board, i=0, j=0, step=1):
 
 
 def main():
-    """Program entry point."""
+    """Ponto de entrada do programa."""
     board = [[0] * SIZE for _ in range(SIZE)]
     patrol(board)
 

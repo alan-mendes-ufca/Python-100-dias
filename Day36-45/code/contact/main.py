@@ -1,20 +1,18 @@
-"""
--- Create a database named `address`
-create database address default charset utf8;
+"""-- Crie um banco de dados chamado `address`
+criar endereço de banco de dados charset padrão utf8;
 
--- Switch to the `address` database
-use address;
+-- Mude para o banco de dados `address`
+usar endereço;
 
--- Create the contact table `tb_contacter`
-create table tb_contacter
+-- Cria a tabela de contatos `tb_contacter`
+criar tabela tb_contacter
 (
-conid int auto_increment comment 'id',
-conname varchar(31) not null comment 'name',
-contel varchar(15) default '' comment 'telephone',
-conemail varchar(255) default'' comment 'email',
-primary key (conid)
-);
-"""
+conid int comentário de incremento automático 'id',
+conname varchar(31) não comentário nulo 'nome',
+contel varchar(15) default '' comentar 'telefone',
+conemail varchar (255) padrão'' comentário 'e-mail',
+chave primária (conid)
+);"""
 import pymysql
 
 INSERT_CONTACTER = """

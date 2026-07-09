@@ -1,4 +1,4 @@
-"""Maze path finding."""
+"""Localização do caminho do labirinto."""
 import random
 import sys
 
@@ -10,7 +10,7 @@ COLS = 10
 
 
 def find_way(maze, i=0, j=0, step=1):
-    """Search for a path through the maze."""
+    """Procure um caminho pelo labirinto."""
     if 0 <= i < ROWS and 0 <= j < COLS and maze[i][j] == 0:
         maze[i][j] = step
         if i == ROWS - 1 and j == COLS - 1:
@@ -25,7 +25,7 @@ def find_way(maze, i=0, j=0, step=1):
 
 
 def reset(maze):
-    """Reset the maze with random walls."""
+    """Redefina o labirinto com paredes aleatórias."""
     for i in range(ROWS):
         for j in range(COLS):
             num = random.randint(1, 10)
@@ -34,7 +34,7 @@ def reset(maze):
 
 
 def display(maze):
-    """Display the maze."""
+    """Mostre o labirinto."""
     for row in maze:
         for col in row:
             if col == -1:
@@ -47,7 +47,7 @@ def display(maze):
 
 
 def main():
-    """Program entry point."""
+    """Ponto de entrada do programa."""
     maze = [[0] * COLS for _ in range(ROWS)]
     reset(maze)
     display(maze)

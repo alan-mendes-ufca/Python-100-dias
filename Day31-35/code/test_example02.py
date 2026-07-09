@@ -4,7 +4,7 @@ from example02 import select_sort, merge
 
 
 class TestExample02(TestCase):
-    """Test cases for sorting helpers."""
+    """Casos de teste para classificação de auxiliares."""
 
     def setUp(self):
         self.data1 = [35, 97, 12, 68, 55, 73, 81, 40]
@@ -17,7 +17,7 @@ class TestExample02(TestCase):
             self.assertLessEqual(items[i], items[i + 1])
 
     def test_select_sort(self):
-        """Test selection sort."""
+        """Classificação de seleção de teste."""
         items = select_sort(self.data1)
         for i in range(len(items) - 1):
             self.assertLessEqual(items[i], items[i + 1])

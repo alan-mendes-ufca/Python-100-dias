@@ -2,7 +2,7 @@ from random import randint, sample
 
 
 def generate():
-    """Generate one random lottery ticket."""
+    """Gere um bilhete de loteria aleatório."""
     red_balls = [x for x in range(1, 34)]
     selected_balls = sample(red_balls, 6)
     selected_balls.sort()
@@ -11,7 +11,7 @@ def generate():
 
 
 def display(balls):
-    """Display one ticket."""
+    """Mostre um ingresso."""
     for index, ball in enumerate(balls):
         print(f'{ball:0>2d}', end=' ')
         if index == len(balls) - 2:

@@ -2,7 +2,7 @@ from example12 import EmployeeFactory
 
 
 def main():
-    """Program entry point."""
+    """Ponto de entrada do programa."""
     emps = [
         EmployeeFactory.create('M', 'Cao Cao'),
         EmployeeFactory.create('P', 'Xun Yu', 120),

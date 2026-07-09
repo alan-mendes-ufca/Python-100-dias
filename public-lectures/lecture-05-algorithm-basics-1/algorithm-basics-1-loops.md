@@ -1,27 +1,27 @@
-## Algorithm Primer Series 1: Cycles and Repetition
+## Algoritmo Primer Série 1: Ciclos e Repetição
 
-This lecture introduces algorithms through small, intuitive examples.
+Esta palestra apresenta algoritmos por meio de exemplos pequenos e intuitivos.
 
-### What an Algorithm Is
+### O que é um algoritmo
 
-An algorithm is a correct method and a concrete sequence of steps for solving a problem.
+Um algoritmo é um método correto e uma sequência concreta de etapas para resolver um problema.
 
-The lecture uses simple examples such as:
+A palestra usa exemplos simples como:
 
-- getting a line from one building window to another
-- counting students in a large classroom efficiently
-- inserting many elements into a list
-- generating Fibonacci numbers
+- obtendo uma linha de uma janela de prédio para outra
+- contando alunos em uma sala de aula grande de forma eficiente
+- inserindo muitos elementos em uma lista
+- gerando números de Fibonacci
 
-### Comparing Solutions
+### Comparando soluções
 
-The key lesson is that different solutions to the same problem can vary greatly in:
+A lição principal é que diferentes soluções para o mesmo problema podem variar muito em:
 
-- clarity
-- cost
-- speed
-- scalability
+- clareza
+- custo
+- velocidade
+- escalabilidade
 
-Examples like iterative Fibonacci, recursive Fibonacci, and memoized Fibonacci are used to motivate algorithmic thinking and complexity awareness.
+Exemplos como Fibonacci iterativo, Fibonacci recursivo e Fibonacci memorizado são usados ​​para motivar o pensamento algorítmico e a consciência da complexidade.
 
-The main goal is to train the habit of comparing approaches rather than treating every correct answer as equally good.
+O principal objetivo é treinar o hábito de comparar abordagens, em vez de tratar todas as respostas corretas como igualmente boas.

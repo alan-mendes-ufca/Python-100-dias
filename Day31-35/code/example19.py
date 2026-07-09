@@ -1,7 +1,5 @@
-"""
-Scalability and concurrent programming.
-This example uses a thread pool to generate thumbnails in parallel.
-"""
+"""Escalabilidade e programação simultânea.
+Este exemplo usa um pool de threads para gerar miniaturas em paralelo."""
 import glob
 import os
 import time
@@ -57,23 +55,21 @@ def main():
     futures = []
     start = time.time()
     for infile in glob.glob('images/*'):
-        # `submit` is non-blocking.
-        # Even if all workers are busy, the task is still accepted.
+        # `submit` não é bloqueador.
+        # Mesmo que todos os trabalhadores estejam ocupados, a tarefa ainda será aceita.
         future = pool.submit(gen_thumbnail, infile)
         futures.append(future)
     for future in futures:
-        # `result` is blocking while the task is still running.
+        # `result` está bloqueando enquanto a tarefa ainda está em execução.
         future.result()
     end = time.time()
     print(f'Elapsed: {end - start} sec')
-    # `shutdown` is also non-blocking, but the pool waits for submitted work.
+    # `shutdown` também não bloqueia, mas o pool aguarda o trabalho enviado.
     pool.shutdown()
 
 
 if __name__ == '__main__':
     main()
-
-
 
 
 

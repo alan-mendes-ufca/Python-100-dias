@@ -1,9 +1,7 @@
-"""
-Encryption and decryption.
-Symmetric encryption uses the same key for encryption and decryption.
-Asymmetric encryption uses different keys, such as RSA.
-pip install pycrypto
-"""
+"""Criptografia e descriptografia.
+A criptografia simétrica usa a mesma chave para criptografia e descriptografia.
+A criptografia assimétrica usa chaves diferentes, como RSA.
+pip instalar pycrypto"""
 import base64
 
 from hashlib import md5
@@ -19,26 +17,26 @@ from Crypto.PublicKey import RSA
 
 
 def main():
-    """Program entry point."""
-    # Generate a key pair.
+    """Ponto de entrada do programa."""
+    # Gere um par de chaves.
     key_pair = RSA.generate(1024)
-    # Import the public key.
+    # Importe a chave pública.
     pub_key = RSA.importKey(key_pair.publickey().exportKey())
-    # Import the private key.
+    # Importe a chave privada.
     pri_key = RSA.importKey(key_pair.exportKey())
     message1 = 'hello, world!'
-    # Encrypt data.
+    # Criptografar dados.
     data = pub_key.encrypt(message1.encode(), None)
-    # BASE64-encode the encrypted data.
+    # Codifique em BASE64 os dados criptografados.
     message2 = base64.b64encode(data[0])
     print(message2)
-    # BASE64-decode the encrypted data.
+    # Decodifica em BASE64 os dados criptografados.
     data = base64.b64decode(message2)
-    # Decrypt the data.
+    # Descriptografe os dados.
     message3 = pri_key.decrypt(data)
     print(message3.decode())
-    # # AES - symmetric encryption
-    # str1 = 'I love you all!'
+    # # AES - criptografia simétrica
+    # str1 = 'Eu amo todos vocês!'
     # cipher = AES.new(key, AES.MODE_CFB, iv)
     # # Encrypt
     # str2 = cipher.encrypt(str1)

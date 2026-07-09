@@ -1,26 +1,26 @@
-## Why I Chose Python
+## Por que escolhi Python
 
-This essay explains why Python stands out among mainstream programming languages.
+Este ensaio explica por que o Python se destaca entre as principais linguagens de programação.
 
-### Python vs. Java
+### Python versus Java
 
-The comparison uses simple examples such as:
+A comparação usa exemplos simples, como:
 
 - `hello, world`
-- summing from 1 to 100
-- generating lottery-like random selections
+- somando de 1 a 100
+- gerando seleções aleatórias semelhantes a loteria
 
-The recurring point is that Python usually solves the same problem with less ceremony and better readability.
+O ponto recorrente é que o Python geralmente resolve o mesmo problema com menos cerimônia e melhor legibilidade.
 
-### Why That Matters
+### Por que isso é importante
 
-For many real-world engineering teams, development efficiency matters more often than squeezing out the last bit of runtime performance.
+Para muitas equipes de engenharia do mundo real, a eficiência do desenvolvimento é mais importante do que extrair o que resta do desempenho do tempo de execução.
 
-Python’s strengths:
+Pontos fortes do Python:
 
-- concise syntax
-- readability
-- fast development feedback
-- large ecosystem
+- sintaxe concisa
+- legibilidade
+- feedback de desenvolvimento rápido
+- grande ecossistema
 
-The essay’s conclusion is straightforward: Python is a strong choice when productivity, clarity, and breadth of use cases matter.
+A conclusão do ensaio é direta: Python é uma escolha forte quando produtividade, clareza e amplitude de casos de uso são importantes.

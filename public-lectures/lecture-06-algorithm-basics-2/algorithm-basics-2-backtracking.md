@@ -1,32 +1,32 @@
-## Algorithm Primer Series 2: Backtracking and Recursion
+## Algoritmo Primer Série 2: Retrocesso e Recursão
 
-This lecture continues the algorithm series with recursion and backtracking.
+Esta palestra continua a série de algoritmos com recursão e retrocesso.
 
-### Recursion
+### Recursão
 
-Recursion means defining or solving something in terms of itself.
+Recursão significa definir ou resolver algo em termos de si mesmo.
 
-Examples used in the lecture:
+Exemplos usados ​​na palestra:
 
-- self-referential stories
-- recursive factorial definition
-- recursive staircase-counting problem
+- histórias autorreferenciais
+- definição fatorial recursiva
+- problema recursivo de contagem de escadas
 
-Important points when writing recursive functions:
+Pontos importantes ao escrever funções recursivas:
 
-1. base case: when recursion stops
-2. recurrence relation: how the current state depends on previous states
+1. caso base: quando a recursão para
+2. relação de recorrência: como o estado atual depende dos estados anteriores
 
-The lecture also notes that Python limits recursion depth by default, and shows how to adjust it with `sys.setrecursionlimit`.
+A palestra também observa que o Python limita a profundidade da recursão por padrão e mostra como ajustá-la com `sys.setrecursionlimit`.
 
-### Backtracking
+### Retrocesso
 
-Backtracking is a structured form of brute-force search. It builds candidate solutions step by step and abandons branches as soon as they can no longer lead to a valid answer.
+Backtracking é uma forma estruturada de pesquisa de força bruta. Ele constrói soluções candidatas passo a passo e abandona ramificações assim que elas não conseguem mais levar a uma resposta válida.
 
-Classic examples discussed:
+Exemplos clássicos discutidos:
 
-- maze solving
-- knight’s tour
-- eight queens
+- resolução de labirinto
+- passeio do cavaleiro
+- oito rainhas
 
-The main lesson is that recursion is a useful tool, but not always the best tool. If a cleaner iterative or optimized approach exists, prefer that instead of using recursion out of habit.
+A principal lição é que a recursão é uma ferramenta útil, mas nem sempre a melhor. Se existir uma abordagem iterativa ou otimizada mais limpa, prefira isso em vez de usar a recursão por hábito.

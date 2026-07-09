@@ -1,31 +1,29 @@
-"""
-The three pillars of object-oriented programming: encapsulation, inheritance, and polymorphism.
-This file implements a simple monthly payroll system.
-"""
+"""Os três pilares da programação orientada a objetos: encapsulamento, herança e polimorfismo.
+Este arquivo implementa um sistema simples de folha de pagamento mensal."""
 from abc import ABCMeta, abstractmethod
 
 
 class Employee(metaclass=ABCMeta):
-    """Employee (abstract base class)."""
+    """Funcionário (classe base abstrata)."""
 
     def __init__(self, name):
         self.name = name
 
     @abstractmethod
     def get_salary(self):
-        """Compute the monthly salary."""
+        """Calcule o salário mensal."""
         pass
 
 
 class Manager(Employee):
-    """Department manager."""
+    """Gerente de departamento."""
 
     def get_salary(self):
         return 15000.0
 
 
 class Programmer(Employee):
-    """Programmer."""
+    """Programador."""
 
     def __init__(self, name, working_hour=0):
         self.working_hour = working_hour
@@ -36,7 +34,7 @@ class Programmer(Employee):
 
 
 class Salesman(Employee):
-    """Salesperson."""
+    """Vendedor."""
 
     def __init__(self, name, sales=0.0):
         self.sales = sales
@@ -47,11 +45,11 @@ class Salesman(Employee):
 
 
 class EmployeeFactory():
-    """Factory for employee objects."""
+    """Fábrica de objetos de funcionários."""
 
     @staticmethod
     def create(emp_type, *args, **kwargs):
-        """Create one employee."""
+        """Crie um funcionário."""
         emp_type = emp_type.upper()
         emp = None
         if emp_type == 'M':

@@ -1,12 +1,10 @@
-"""
-Meta concepts: metadata and metaclasses.
-A metaclass describes how classes themselves are created.
-"""
+"""Metaconceitos: metadados e metaclasses.
+Uma metaclasse descreve como as próprias classes são criadas."""
 import threading
 
 
 class SingletonMeta(type):
-    """Custom metaclass."""
+    """Metaclasse personalizada."""
 
     def __init__(cls, *args, **kwargs):
         cls.__instance = None
@@ -22,7 +20,7 @@ class SingletonMeta(type):
 
 
 class President(metaclass=SingletonMeta):
-    """President (singleton class)."""
+    """Presidente (turma única)."""
 
     def __init__(self, name, country):
         self.name = name
@@ -33,7 +31,7 @@ class President(metaclass=SingletonMeta):
 
 
 def main():
-    """Program entry point."""
+    """Ponto de entrada do programa."""
     p1 = President('Trump', 'USA')
     p2 = President('Obama', 'USA')
     p3 = President.__call__('Clinton', 'USA')

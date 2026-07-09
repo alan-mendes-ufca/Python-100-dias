@@ -1,4 +1,8 @@
 venv
+.venv-translate
+.translation-cache-pt.json
+.translation-cache-pt-v2.json
+.translation-errors-pt.log
 .idea
 *.pyc
 __pycache__

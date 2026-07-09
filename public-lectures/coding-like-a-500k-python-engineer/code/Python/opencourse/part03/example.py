@@ -1,16 +1,16 @@
-"""Simple poker deck example."""
+"""Exemplo simples de baralho de pôquer."""
 import enum
 import random
 
 
 @enum.unique
 class Suite(enum.Enum):
-    """Card suit."""
+    """Naipe de cartas."""
     SPADE, HEART, CLUB, DIAMOND = range(4)
 
 
 class Card:
-    """Playing card."""
+    """Carta de jogo."""
 
     def __init__(self, suite, face):
         self.suite = suite
@@ -23,7 +23,7 @@ class Card:
 
 
 class Poker:
-    """Deck of cards."""
+    """Baralho de cartas."""
 
     def __init__(self):
         self.cards = [Card(suite, face) for suite in Suite
@@ -31,24 +31,24 @@ class Poker:
         self.current = 0
 
     def shuffle(self):
-        """Shuffle the deck."""
+        """Embaralhe o baralho."""
         self.current = 0
         random.shuffle(self.cards)
 
     def deal(self):
-        """Deal one card."""
+        """Distribua uma carta."""
         card = self.cards[self.current]
         self.current += 1
         return card
 
     @property
     def has_next(self):
-        """Whether there are cards left to deal."""
+        """Se ainda restam cartas para distribuir."""
         return self.current < len(self.cards)
 
 
 def main():
-    """Program entry point."""
+    """Ponto de entrada do programa."""
     poker = Poker()
     poker.shuffle()
     print(poker.cards)

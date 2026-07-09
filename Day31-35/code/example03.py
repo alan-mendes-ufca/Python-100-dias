@@ -1,20 +1,18 @@
-"""
-Recursive function calls.
+"""Chamadas de função recursivas.
 
-Key ideas:
-1. A base case
-2. A recurrence relation
+Ideias principais:
+1. Um caso básico
+2. Uma relação de recorrência
 
-n! = n * (n-1)!
+não! =n*(n-1)!
 f(n) = f(n-1) + f(n-2)
-1 1 2 3 5 8 13 21 34 55 ...
-"""
+1 1 2 3 5 8 13 21 34 55 ..."""
 from contextlib import contextmanager
 from time import perf_counter
 
 
 def fac(num):
-    """Compute a factorial."""
+    """Calcule um fatorial."""
     assert num >= 0
     if num in (0, 1):
         return 1
@@ -22,7 +20,7 @@ def fac(num):
 
 
 def fib2(num):
-    """Iterative Fibonacci implementation."""
+    """Implementação iterativa de Fibonacci."""
     a, b = 1, 1
     for _ in range(num - 1):
         a, b = b, a + b
@@ -30,16 +28,16 @@ def fib2(num):
 
 
 def fib3(num):
-    """Fibonacci generator."""
+    """Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."""
     a, b = 0, 1
     for _ in range(num):
         a, b = b, a + b
         yield a
 
 
-# Dynamic programming caches repeated intermediate results.
+# A programação dinâmica armazena em cache resultados intermediários repetidos.
 def fib(num, results={}):
-    """Compute a Fibonacci number."""
+    """Calcule um número de Fibonacci."""
     assert num > 0
     if num in (1, 2):
         return 1
@@ -61,7 +59,7 @@ def timer():
 
 
 def main():
-    """Program entry point."""
+    """Ponto de entrada do programa."""
     # for val in fib3(20):
     #     print(val)
     # gen = fib3(20)

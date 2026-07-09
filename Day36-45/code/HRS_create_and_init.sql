@@ -1,11 +1,11 @@
--- Create a database named `hrs`
+-- Crie um banco de dados chamado `hrs`
 drop database if exists `hrs`;
 create database `hrs` default charset utf8mb4;
 
--- Switch to the `hrs` database
+-- Mude para o banco de dados `hrs`
 use `hrs`;
 
--- Create the department table
+-- Crie a tabela de departamento
 create table `tb_dept`
 (
 `dno` int not null comment 'id',
@@ -14,14 +14,14 @@ create table `tb_dept`
 primary key (dno)
 );
 
--- Insert four departments
+-- Insira quatro departamentos
 insert into `tb_dept` values 
     (10, 'Accounting', 'Beijing'),
     (20, 'R&D', 'Chengdu'),
     (30, 'Sales', 'Chongqing'),
     (40, 'Operations', 'Shenzhen');
 
--- Create the employee table
+-- Crie a tabela de funcionários
 create table `tb_emp`
 (
 `eno` int not null comment 'employee id',
@@ -36,7 +36,7 @@ constraint `fk_emp_mgr` foreign key (`mgr`) references tb_emp (`eno`),
 constraint `fk_emp_dno` foreign key (`dno`) references tb_dept (`dno`)
 );
 
--- Insert fourteen employees
+-- Inserir quatorze funcionários
 insert into `tb_emp` values 
     (7800, 'Zhang Sanfeng', 'President', null, 9000, 1200, 20),
     (2056, 'Qiao Feng', 'Analyst', 7800, 5000, 1500, 20),
@@ -54,22 +54,22 @@ insert into `tb_emp` values
     (3588, 'Zhu Jiuzhen', 'Accountant', 5566, 2500, null, 10);
 
 
--- Query the employee name and salary with the highest monthly salary
+-- Consultar o nome e salário do funcionário com maior salário mensal
 
--- Query employee names and annual salary (annual salary = (sal + comm) * 13)
+-- Consultar nomes de funcionários e salário anual (salário anual = (sal + comm) * 13)
 
--- Query department ids and headcount for departments that have employees
+-- Consultar IDs de departamento e número de funcionários para departamentos que possuem funcionários
 
--- Query all department names and headcount
+-- Consulte todos os nomes de departamentos e número de funcionários
 
--- Query employees whose monthly salary exceeds the average salary
+-- Consultar funcionários cujo salário mensal excede o salário médio
 
--- Query employees whose monthly salary exceeds their department average
+-- Consultar funcionários cujo salário mensal excede a média do departamento
 
--- Query the top-paid employee in each department
+-- Consulte o funcionário mais bem pago em cada departamento
 
--- Query manager names and job titles
+-- Consultar nomes de gerentes e cargos
 
--- Query the rank, name, and salary of employees ranked 4 through 6 by salary
+-- Consulte a posição, o nome e o salário dos funcionários classificados de 4 a 6 por salário
 
--- Query the top two salaries in each department
+-- Consulte os dois principais salários de cada departamento

@@ -16,4 +16,3 @@ if __name__ == '__main__':
     main()
 # for i in range(1000):
 #     print(f'{i}:'.rjust(3), fac(i))
-

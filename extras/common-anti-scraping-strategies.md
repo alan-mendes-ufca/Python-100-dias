@@ -1,25 +1,25 @@
-## Common Anti-Crawling Strategies and Responses
+## Estratégias e respostas comuns anti-rastreamento
 
-Websites often defend themselves from crawlers. This note summarizes common techniques and corresponding responses.
+Os sites geralmente se defendem de rastreadores. Esta nota resume técnicas comuns e respostas correspondentes.
 
-Typical anti-crawling measures:
+Medidas anti-rastreamento típicas:
 
-1. request-header checks
-2. cookie validation
-3. dynamic content rendering
-4. rate limiting
-5. hidden form fields
+1. verificações de cabeçalho de solicitação
+2. validação de cookies
+3. renderização de conteúdo dinâmico
+4. limitação de taxa
+5. campos de formulário ocultos
 6. captchas
-7. trap or honeypot links
-8. IP and identity detection
+7. links trap ou honeypot
+8. Detecção de IP e identidade
 
-Typical responses include:
+As respostas típicas incluem:
 
-- realistic request headers
-- cookie handling
-- Selenium or browser automation
-- OCR or third-party captcha services
-- proxy services
-- throttling and politeness controls
+- cabeçalhos de solicitação realistas
+- manipulação de cookies
+- Selenium ou automação do navegador
+- Serviços de OCR ou captcha de terceiros
+- serviços de proxy
+- controles de limitação e polidez
 
-The right response depends on the target site, but the broader lesson is that crawler engineering is often as much about protocol and behavior as it is about parsing HTML.
+A resposta correta depende do site de destino, mas a lição mais ampla é que a engenharia do rastreador geralmente envolve tanto protocolo e comportamento quanto análise de HTML.

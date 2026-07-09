@@ -1,11 +1,11 @@
-## Sharing a Few Learning Roadmaps
+## Compartilhando alguns roteiros de aprendizagem
 
-This note collects a few roadmap-style learning diagrams.
+Esta nota reúne alguns diagramas de aprendizagem no estilo roteiro.
 
-The goal is not to imply that everyone must follow one path, but to provide:
+O objetivo não é implicar que todos devem seguir um caminho, mas fornecer:
 
-- a sense of direction
-- a big-picture view
-- help prioritizing what to learn next
+- um senso de direção
+- uma visão geral
+- ajudar a priorizar o que aprender a seguir
 
-A roadmap is most useful when treated as guidance, not as a checklist to complete mechanically.
+Um roteiro é mais útil quando tratado como orientação e não como uma lista de verificação a ser concluída mecanicamente.

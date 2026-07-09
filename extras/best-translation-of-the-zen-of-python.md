@@ -1,12 +1,12 @@
-## A Good Translation of The Zen of Python
+## Uma boa tradução de The Zen of Python
 
-This note discusses how to understand and translate `The Zen of Python`.
+Esta nota discute como compreender e traduzir `The Zen of Python`.
 
-The main point is that the Zen is not just a list of slogans. It encodes Python’s design philosophy:
+O ponto principal é que o Zen não é apenas uma lista de slogans. Ele codifica a filosofia de design do Python:
 
-- readability matters
-- explicit is better than implicit
-- simplicity is valuable
-- practicality matters
+- legibilidade é importante
+- explícito é melhor que implícito
+- a simplicidade é valiosa
+- praticidade é importante
 
-A good translation should preserve both the literal meaning and the programming attitude behind the original lines.
+Uma boa tradução deve preservar tanto o significado literal quanto a atitude de programação por trás das linhas originais.

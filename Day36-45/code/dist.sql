@@ -7,7 +7,7 @@ primary key (`distid`)
 );
 
 
--- Insert district data
+-- Inserir dados do distrito
 INSERT INTO `tb_district` (`distid`, `name`, `pid`) VALUES 
 ('110000', 'Bei Jing Shi', NULL),
 ('110100', 'Bei Jing Shi', '110000'),

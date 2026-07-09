@@ -1,7 +1,5 @@
-"""
-aiohttp for asynchronous HTTP access.
-Asynchronous I/O can handle many I/O-bound tasks efficiently with a single event loop.
-"""
+"""aiohttp para acesso HTTP assíncrono.
+A E/S assíncrona pode lidar com muitas tarefas vinculadas a E/S de forma eficiente com um único loop de eventos."""
 import asyncio
 import re
 

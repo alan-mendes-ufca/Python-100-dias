@@ -1,28 +1,28 @@
-## How to Get Comfortable with pandas Quickly
+## Como se sentir confortável com os pandas rapidamente
 
-This is a practical cheat-sheet style note for pandas.
+Esta é uma nota prática em estilo de folha de dicas para pandas.
 
-The main idea is that instead of memorizing everything, you should master pandas around a workflow:
+A ideia principal é que, em vez de memorizar tudo, você domine os pandas em torno de um fluxo de trabalho:
 
-1. load data
-2. clean data
-3. transform data
-4. aggregate and pivot
-5. visualize and present
+1. carregar dados
+2. dados limpos
+3. transformar dados
+4. agregar e pivô
+5. visualizar e apresentar
 
-Important capabilities covered include:
+Recursos importantes cobertos incluem:
 
-- reading CSV, Excel, and SQL
-- handling missing values
-- categorical processing
-- dummy variables
-- binning
-- custom transformations
-- descriptive statistics
-- correlation
-- sorting and Top-N selection
-- grouping and aggregation
-- reshaping, pivot tables, and crosstabs
-- plotting
+- lendo CSV, Excel e SQL
+- lidando com valores ausentes
+- processamento categórico
+- variáveis ​​​​fictícias
+- descarte
+- transformações personalizadas
+- estatística descritiva
+- correlação
+- classificação e seleção Top-N
+- agrupamento e agregação
+- remodelagem, tabelas dinâmicas e tabelas cruzadas
+- tramando
 
-This note works best as a reference sheet for repeated hands-on practice.
+Esta nota funciona melhor como uma folha de referência para práticas práticas repetidas.

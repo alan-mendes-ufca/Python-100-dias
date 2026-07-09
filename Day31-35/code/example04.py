@@ -1,7 +1,5 @@
-"""
-Greedy method: always make the locally best choice.
-It may not be globally optimal, but it often finds a good answer quickly.
-"""
+"""Método ganancioso: faça sempre a melhor escolha local.
+Pode não ser globalmente ideal, mas muitas vezes encontra rapidamente uma boa resposta."""
 class Thing(object):
     """Item."""
 
@@ -12,18 +10,18 @@ class Thing(object):
 
     @property
     def value(self):
-        """Price-to-weight ratio."""
+        """Relação preço/peso."""
         return self.price / self.weight
 
 
 def input_thing():
-    """Read one item from standard input."""
+    """Leia um item da entrada padrão."""
     name_str, price_str, weight_str = input().split()
     return name_str, int(price_str), int(weight_str)
 
 
 def main():
-    """Program entry point."""
+    """Ponto de entrada do programa."""
     max_weight, num_of_things = map(int, input().split())
     all_things = []
     for _ in range(num_of_things):

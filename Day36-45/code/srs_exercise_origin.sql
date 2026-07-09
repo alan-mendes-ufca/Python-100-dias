@@ -1,51 +1,51 @@
--- Query all student records
+-- Consultar todos os registros dos alunos
 
--- Query all course names and credits (projection and alias)
+-- Consultar todos os nomes e créditos dos cursos (projeção e alias)
 
--- Query the names and birth dates of all female students (filtering)
+-- Consultar os nomes e datas de nascimento de todas as alunas (filtragem)
 
--- Query the name, sex, and birth date of students born in the 1980s (filtering)
+-- Consultar nome, sexo e data de nascimento de alunos nascidos na década de 1980 (filtragem)
 
--- Query the name and sex of students whose surname is Yang (pattern matching)
+-- Consultar o nome e sexo dos alunos cujo sobrenome é Yang (correspondência de padrões)
 
--- Query Yang-surname students with two-character names (pattern matching)
+-- Consultar alunos com sobrenome Yang com nomes de dois caracteres (correspondência de padrões)
 
--- Query Yang-surname students with three-character names (pattern matching)
+-- Consultar alunos com sobrenome Yang com nomes de três caracteres (correspondência de padrões)
 
--- Query students whose names contain a target character (pattern matching)
+-- Consultar alunos cujos nomes contêm um caractere de destino (correspondência de padrões)
 
--- Query students without a recorded home address (NULL handling)
+-- Consultar alunos sem endereço residencial registrado (tratamento NULL)
 
--- Query students with a recorded home address (NULL handling)
+-- Consultar alunos com endereço residencial registrado (tratamento NULO)
 
--- Query all course-selection dates (deduplication)
+-- Consultar todas as datas de seleção de cursos (desduplicação)
 
--- Query student home addresses (deduplication)
+-- Consultar endereços residenciais de alunos (desduplicação)
 
--- Query male student names and birthdays ordered by age descending (sorting)
+-- Consultar nomes de alunos do sexo masculino e aniversários ordenados por idade decrescente (classificação)
 
--- Query the birth date of the oldest student (aggregate function)
+-- Consultar a data de nascimento do aluno mais velho (função agregada)
 
--- Query the birth date of the youngest student (aggregate function)
+-- Consultar a data de nascimento do aluno mais novo (função agregada)
 
--- Query the number of male and female students (grouping and aggregation)
+-- Consultar o número de alunos do sexo masculino e feminino (agrupamento e agregação)
 
--- Query the average score for course 1111 (filtering and aggregation)
+-- Consultar a pontuação média do curso 1111 (filtragem e agregação)
 
--- Query the average score across all courses for student 1001
+-- Consulte a pontuação média de todos os cursos do aluno 1001
 
--- Query each student's id and average score
+-- Consultar id e nota média de cada aluno
 
--- Query students whose average score is at least 90
+-- Consultar alunos cuja pontuação média seja de pelo menos 90
 
--- Query the name of the oldest student (subquery)
+-- Consultar o nome do aluno mais velho (subconsulta)
 
--- Query the name and age of the oldest student (subquery + calculation)
+-- Consultar nome e idade do aluno mais velho (subconsulta + cálculo)
 
--- Query students who selected more than two courses
+-- Consultar alunos que selecionaram mais de dois cursos
 
--- Query student name, course name, and score (join)
+-- Consultar nome do aluno, nome do curso e pontuação (ingressar)
 
--- Query the names and average scores of students who selected courses
+-- Consultar os nomes e notas médias dos alunos que selecionaram os cursos
 
--- Query each student's name and course count (left join + subquery)
+-- Consulte o nome de cada aluno e a contagem de cursos (junção à esquerda + subconsulta)

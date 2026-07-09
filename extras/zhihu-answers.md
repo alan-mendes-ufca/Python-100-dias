@@ -1,27 +1,27 @@
-## Zhihu Q&A Notes
+## Notas de perguntas e respostas de Zhihu
 
-This document collects practical answers to common Python-learning questions.
+Este documento coleta respostas práticas para questões comuns de aprendizagem de Python.
 
-One major question discussed is:
+Uma questão importante discutida é:
 
-> After finishing Python basics, how should I improve further?
+> Depois de terminar o básico do Python, como devo melhorar ainda mais?
 
-The answer depends on the direction you want to pursue, such as:
+A resposta depende da direção que você deseja seguir, como:
 
-- backend development
-- crawling
-- quantitative development
-- data analysis
-- machine learning
-- automated testing
-- operations / DevOps
-- cloud platform work
+- desenvolvimento de back-end
+- rastejando
+- desenvolvimento quantitativo
+- análise de dados
+- aprendizado de máquina
+- testes automatizados
+- operações/DevOps
+- trabalho de plataforma em nuvem
 
-For each direction, the note outlines:
+Para cada direção, a nota descreve:
 
-- core tools
-- common frameworks
-- supporting infrastructure knowledge
-- recommended book categories
+- ferramentas principais
+- estruturas comuns
+- apoiando o conhecimento da infraestrutura
+- categorias de livros recomendadas
 
-The main advice is to choose a direction first, then study deliberately instead of learning random tools without a goal.
+O principal conselho é escolher primeiro uma direção e depois estudar deliberadamente, em vez de aprender ferramentas aleatórias sem objetivo.

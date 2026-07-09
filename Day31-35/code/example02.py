@@ -1,15 +1,14 @@
-"""
-Sorting: bubble sort, selection sort, merge sort, and quick sort.
+"""Classificação: classificação por bolha, classificação por seleção, classificação por mesclagem e classificação rápida.
 
-Bubble sort - O(n ** 2): compare adjacent items and move larger values down.
+Classificação por bolha - O (n ** 2): compare itens adjacentes e mova valores maiores para baixo.
 35, 97, 12, 68, 55, 73, 81, 40
 35, 12, 68, 55, 73, 81, 40, [97]
 12, 35, 55, 68, 73, 40, [81]
 12, 35, 55, 68, 40, [73]
 ...
-Selection sort - O(n ** 2): repeatedly pick the smallest remaining value.
+Classificação por seleção - O (n ** 2): escolha repetidamente o menor valor restante.
 -----------------------------------------
-Merge sort - O(n * log_2 n)
+Classificação de mesclagem - O (n * log_2 n)
 35, 97, 12, 68, 55, 73, 81, 40
 [35, 97, 12, 68], [55, 73, 81, 40]
 [35, 97], [12, 68], [55, 73], [81, 40]
@@ -18,17 +17,16 @@ Merge sort - O(n * log_2 n)
 [12, 35, 68, 97], [40, 55, 73, 81]
 [12, 35, 40, 55, 68, 73, 81, 97]
 -----------------------------------------
-Quick sort - partition the list around a pivot value.
+Classificação rápida - particione a lista em torno de um valor dinâmico.
 35, 97, 12, 68, 55, 73, 81, 40
 35, 12, [40], 68, 55, 73, 81, 97
 [12], 35, [40], 68, 55, 73, 81, [97]
 [12], 35, [40], 55, [68], 73, 81, [97]
-[12], 35, [40], 55, [68], 73, [81], [97]
-"""
+[12], 35, [40], 55, [68], 73, [81], [97]"""
 
 
 class Person(object):
-    """Person."""
+    """Pessoa."""
 
     def __init__(self, name, age):
         self.name = name
@@ -45,7 +43,7 @@ class Person(object):
 
 
 def select_sort(origin_items, comp=lambda x, y: x < y):
-    """Simple selection sort."""
+    """Classificação de seleção simples."""
     items = origin_items[:]
     for i in range(len(items) - 1):
         min_index = i
@@ -56,15 +54,15 @@ def select_sort(origin_items, comp=lambda x, y: x < y):
     return items
 
 
-# Try to design functions without side effects.
+# Tente projetar funções sem efeitos colaterais.
 # 9 1 2 3 4 5 6 7 8
 # 9 2 3 4 5 6 7 8 1
-# Parameters before `*` are positional parameters.
-# Parameters after `*` are keyword-only parameters.
-# *args collects extra positional arguments in a tuple.
-# **kwargs collects keyword arguments in a dictionary.
+# Os parâmetros anteriores a `*` são parâmetros posicionais.
+# Os parâmetros após `*` são parâmetros somente de palavras-chave.
+# *args coleta argumentos posicionais extras em uma tupla.
+# **kwargs coleta argumentos de palavras-chave em um dicionário.
 def bubble_sort(origin_items, *, comp=lambda x, y: x > y):
-    """Bubble sort."""
+    """Tipo de bolha."""
     items = origin_items[:]
     for i in range(1, len(items)):
         swapped = False
@@ -84,7 +82,7 @@ def bubble_sort(origin_items, *, comp=lambda x, y: x > y):
 
 
 def merge_sort(items, comp=lambda x, y: x <= y):
-    """Merge sort."""
+    """Mesclar classificação."""
     if len(items) < 2:
         return items[:]
     mid = len(items) // 2
@@ -94,7 +92,7 @@ def merge_sort(items, comp=lambda x, y: x <= y):
 
 
 def merge(items1, items2, comp=lambda x, y: x <= y):
-    """Merge two sorted lists into a new sorted list."""
+    """Mesclar duas listas classificadas em uma nova lista classificada."""
     items = []
     index1, index2 = 0, 0
     while index1 < len(items1) and index2 < len(items2):
@@ -110,14 +108,14 @@ def merge(items1, items2, comp=lambda x, y: x <= y):
 
 
 def quick_sort(origin_items, comp=lambda x, y: x <= y):
-    """Quick sort."""
+    """Classificação rápida."""
     items = origin_items[:]
     _quick_sort(items, 0, len(items) - 1, comp)
     return items
 
 
 def _quick_sort(items, start, end, comp):
-    """Recursively partition and sort."""
+    """Particionar e classificar recursivamente."""
     if start < end:
         pos = _partition(items, start, end, comp)
         _quick_sort(items, start, pos - 1, comp)
@@ -125,7 +123,7 @@ def _quick_sort(items, start, end, comp):
 
 
 def _partition(items, start, end, comp):
-    """Partition around the pivot."""
+    """Partição em torno do pivô."""
     pivot = items[end]
     i = start - 1
     for j in range(start, end):
@@ -137,7 +135,7 @@ def _partition(items, start, end, comp):
 
 
 def main():
-    """Program entry point."""
+    """Ponto de entrada do programa."""
     items = [35, 97, 12, 68, 55, 73, 81, 40]
     # print(bubble_sort(items))
     # print(select_sort(items))

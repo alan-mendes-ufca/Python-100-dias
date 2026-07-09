@@ -1,14 +1,12 @@
-"""
-Iterators: `__iter__` and `__next__`.
-`itertools` is a utility module for building iterables.
-"""
+"""Iteradores: `__iter__` e `__next__`.
+`itertools` é um módulo utilitário para construção de iteráveis."""
 import itertools
 
 from math import sqrt
 
 
 def is_prime(num):
-    """Check whether a number is prime."""
+    """Verifique se um número é primo."""
     for factor in range(2, int(sqrt(num)) + 1):
         if num % factor == 0:
             return False
@@ -16,7 +14,7 @@ def is_prime(num):
 
 
 class PrimeIter(object):
-    """Prime-number iterator."""
+    """Iterador de números primos."""
 
     def __init__(self, min_value, max_value):
         assert 2 <= min_value <= max_value
@@ -36,7 +34,7 @@ class PrimeIter(object):
 
 
 class FibIter(object):
-    """Fibonacci iterator."""
+    """Iterador de Fibonacci."""
     
     def __init__(self, num):
         self.num = num

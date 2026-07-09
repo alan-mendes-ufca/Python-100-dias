@@ -1,13 +1,13 @@
-## Python Programming Conventions
+## Convenções de programação Python
 
-This note covers common Python coding conventions beyond strict syntax.
+Esta nota cobre convenções comuns de codificação Python além da sintaxe estrita.
 
-Typical topics include:
+Os tópicos típicos incluem:
 
-- naming habits
-- layout and formatting
-- common idioms
-- when to use built-ins
-- writing code that feels "Pythonic"
+- hábitos de nomenclatura
+- layout e formatação
+- expressões idiomáticas comuns
+- quando usar recursos integrados
+- escrevendo código que parece "Pythônico"
 
-The central message is that clean conventions reduce friction in team work and improve readability.
+A mensagem central é que convenções limpas reduzem o atrito no trabalho em equipe e melhoram a legibilidade.

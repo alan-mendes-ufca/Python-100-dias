@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+HTML
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Dynamic List</title>
-    <style>
+<meta charset="utf-8"/>
+<title>Lista Dinâmica</title>
+<style>
     	* {
 			margin: 0;
 			padding: 0;
@@ -60,20 +60,18 @@
     </style>
 </head>
 <body>
-    <div id="app">
-        <ul id="fruits">
-            <li v-for="fruit in fruits">
-                {{ fruit }}
-                <a href="" @click.prevent="removeItem(fruit)">×</a>
-            </li>
-        </ul>
-        <div>
-            <input @keydown.enter="addItem()" type="text" id="fname" v-model.trim="fname">
-            <button id="ok" @click="addItem()">OK</button>
-        </div>
-    </div>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10"></script>
-	<script>
+<div id="app">
+<ul id="fruits">
+<li v-for="fruit in fruits">{{ fruit }}<a @click.prevent="removeItem(fruit)" href="">×</a>
+</li>
+</ul>
+<div>
+<input @keydown.enter="addItem()" id="fname" type="text" v-model.trim="fname"/>
+<button @click="addItem()" id="ok">OK</button>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10"></script>
+<script>
     const app = new Vue({
         el: '#app',
         data: {

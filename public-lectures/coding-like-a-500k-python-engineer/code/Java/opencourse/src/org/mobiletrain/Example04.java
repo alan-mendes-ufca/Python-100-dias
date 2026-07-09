@@ -8,14 +8,14 @@ import java.util.Scanner;
 class Example04 {
 
     /**
-     * Generate a random integer in the range [min, max).
+     * Gere um número inteiro aleatório no intervalo [min, max).
      */
     public static int randomInt(int min, int max) {
         return (int) (Math.random() * (max - min) + min);
     }
 
     /**
-     * Display one Double Color Ball ticket.
+     * Exibe uma aposta da Double Color Ball.
      */
     public static void display(List<Integer> balls) {
         for (int i = 0; i < balls.size(); ++i) {
@@ -28,7 +28,7 @@ class Example04 {
     }
 
     /**
-     * Generate one random ticket.
+     * Gera uma aposta aleatória.
      */
     public static List<Integer> generate() {
         List<Integer> redBalls = new ArrayList<>();

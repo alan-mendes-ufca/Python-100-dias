@@ -1,8 +1,8 @@
 a, b = 5, 10
 
-# temp = a
-# a = b
-# b = a
+# temperatura = a
+# uma = b
+# b = uma
 
 a, b = b, a
 print(f'a = {a}, b = {b}')

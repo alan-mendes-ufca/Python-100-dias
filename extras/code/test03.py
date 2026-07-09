@@ -1,14 +1,14 @@
 from random import randint, sample
 
-# Build the pool of red balls.
+# Construa o conjunto de bolas vermelhas.
 red_balls = [x for x in range(1, 34)]
-# Select six red balls.
+# Selecione seis bolas vermelhas.
 selected_balls = sample(red_balls, 6)
-# Sort the red balls.
+# Classifique as bolas vermelhas.
 selected_balls.sort()
-# Add one blue ball.
+# Adicione uma bola azul.
 selected_balls.append(randint(1, 16))
-# Print the generated numbers.
+# Imprima os números gerados.
 for index, ball in enumerate(selected_balls):
     print('%02d' % ball, end=' ')
     if index == len(selected_balls) - 2:

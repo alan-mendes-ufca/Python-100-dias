@@ -1,8 +1,6 @@
-"""
-Magic methods.
-To put custom objects into a set or use them as dictionary keys,
-you usually need meaningful `__hash__` and `__eq__` implementations.
-"""
+"""Métodos mágicos.
+Para colocar objetos personalizados em um conjunto ou usá-los como chaves de dicionário,
+você geralmente precisa de implementações `__hash__` e `__eq__` significativas."""
 
 
 class Student():

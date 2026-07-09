@@ -1,108 +1,108 @@
-## Python Learning Resources Summary
+## Resumo dos recursos de aprendizagem Python
 
-Many friends look online for Python-related learning resources, but the quality of online resources is mixed. Some so-called highly liked content actually cannot help people who really have learning needs. Here, I helped everyone make a summary of excellent learning resources, so that everyone can take fewer detours. I hope this content can help everyone.
+Muitos amigos procuram online recursos de aprendizagem relacionados ao Python, mas a qualidade dos recursos online é mista. Alguns conteúdos considerados altamente apreciados, na verdade, não podem ajudar pessoas que realmente têm necessidades de aprendizagem. Aqui ajudei todos a fazer um resumo de excelentes recursos de aprendizagem, para que todos possam fazer menos desvios. Espero que este conteúdo possa ajudar a todos.
 
-> **Warm reminder**: Just choose the resources below that suit you. It is not that every one is worth your study and research.
+> **Lembrete**: basta escolher os recursos abaixo que mais lhe agradam. Não é que todos valham a pena estudar e pesquisar.
 
-### Python Learning Tutorials
+### Tutoriais de aprendizagem Python
 
-#### Written Tutorials
+#### Tutoriais escritos
 
-1. [Learn Python from Scratch](https://www.zhihu.com/column/c_1216656665569013760) - a column I created on Zhihu myself, everyone is welcome to study with daily check-ins
-2. [Data Analysis Based on Python](https://www.zhihu.com/column/c_1217746527315496960) - a column I created on Zhihu myself, everyone is welcome to study and communicate
-3. [An AI Journey at a Moment's Notice](https://www.zhihu.com/column/c_1628900668109946880) - a column I created on Zhihu myself, everyone is welcome to study and communicate
-4. [Python - 100 Days from Beginner to Master](https://github.com/jackfrued/Python-100-Days) - a Python learning project I shared on GitHub myself
-5. [Python 3 Tutorial](https://www.runoob.com/python3/python3-tutorial.html) - the Python course on Runoob, and there are many other learning resources there
-6. [Python Tutorial](https://liaoxuefeng.com/books/python/introduction/index.html) - the Python course on Liao Xuefeng's personal website, and there are also some other learning resources there
+1. [Aprenda Python do zero](https://www.zhihu.com/column/c_1216656665569013760) - uma coluna que eu mesmo criei no Zhihu, todos são bem-vindos para estudar com check-ins diários
+2. [Análise de dados baseada em Python](https://www.zhihu.com/column/c_1217746527315496960) - uma coluna que eu mesmo criei no Zhihu, todos são bem-vindos para estudar e se comunicar
+3. [Uma jornada de IA a qualquer momento](https://www.zhihu.com/column/c_1628900668109946880) - uma coluna que eu mesmo criei no Zhihu, todos são bem-vindos para estudar e se comunicar
+4. [Python – 100 dias do iniciante ao mestre](https://github.com/jackfrued/Python-100-Days) - um projeto de aprendizagem Python que eu mesmo compartilhei no GitHub
+5. [Tutorial Python 3](https://www.runoob.com/python3/python3-tutorial.html) - o curso Python em Runoob, e há muitos outros recursos de aprendizagem lá
+6. [Tutorial Python](https://liaoxuefeng.com/books/python/introduction/index.html) - o curso Python no site pessoal de Liao Xuefeng, e também há alguns outros recursos de aprendizagem lá
 
-#### Video Tutorials
+#### Tutoriais em vídeo
 
-1. [Learn Python from Scratch](https://space.bilibili.com/1177252794/lists/1222205) - Python beginner videos I shared on Bilibili myself
-2. [Quickly Get Started with the Python Language](https://www.zhihu.com/education/video-course/1491848366791700480) - a set of classroom videos from previous lectures uploaded to Zhihu Zhixuetang
-3. [Python Advanced Course](https://space.bilibili.com/1177252794/lists/4128173) - Python advanced classroom videos I shared on Bilibili myself
-4. [The Three Musketeers of Python Data Analysis](https://space.bilibili.com/1177252794/lists/502289) - Python data analysis classroom videos I shared on Bilibili myself
-5. [AI Python for Beginners](https://www.deeplearning.ai/short-courses/ai-python-for-beginners/) - Andrew Ng's Python beginner course
-6. [AI for Everyone](https://www.deeplearning.ai/courses/ai-for-everyone/) - Andrew Ng's AI general course
-7. [Deep Learning Specialization](https://www.deeplearning.ai/courses/deep-learning-specialization/) - Andrew Ng's deep learning specialization course
-8. [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/) - a very popular complete Python course on Udemy (paid)
-9. [Python for Data Science and Machine Learning Bootcamp](https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/) - a highly rated data science course on Udemy (paid)
-10. [PyTorch: Deep Learning and Artificial Intelligence](https://www.udemy.com/course/pytorch-deep-learning/) - a well-reviewed Udemy course (paid)
+1. [Aprenda Python do zero](https://space.bilibili.com/1177252794/lists/1222205) - Vídeos para iniciantes em Python que eu mesmo compartilhei no Bilibili
+2. [Comece rapidamente com a linguagem Python](https://www.zhihu.com/education/video-course/1491848366791700480) - um conjunto de vídeos de aulas de palestras anteriores enviados para Zhihu Zhixuetang
+3. [Curso Avançado de Python](https://space.bilibili.com/1177252794/lists/4128173) - Vídeos de sala de aula avançados em Python que eu mesmo compartilhei no Bilibili
+4. [Os três mosqueteiros da análise de dados Python](https://space.bilibili.com/1177252794/lists/502289) - Vídeos de aula de análise de dados Python que eu mesmo compartilhei no Bilibili
+5. [IA Python para iniciantes](https://www.deeplearning.ai/short-courses/ai-python-for-beginners/) - Curso para iniciantes em Python de Andrew Ng
+6. [IA para todos](https://www.deeplearning.ai/courses/ai-for-everyone/) - Curso geral de IA de Andrew Ng
+7. [Especialização em Aprendizado Profundo](https://www.deeplearning.ai/courses/deep-learning-specialization/) - Curso de especialização em aprendizagem profunda de Andrew Ng
+8. [100 dias de código: o bootcamp completo do Python Pro](https://www.udemy.com/course/100-days-of-code/) - um curso completo de Python muito popular na Udemy (pago)
+9. [Bootcamp de Python para ciência de dados e aprendizado de máquina](https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/) - um curso de ciência de dados altamente avaliado na Udemy (pago)
+10. [PyTorch: Aprendizado Profundo e Inteligência Artificial](https://www.udemy.com/course/pytorch-deep-learning/) - um curso Udemy bem avaliado (pago)
 
-> **Note**: Andrew Ng's courses are also shared by many people on YouTube and Bilibili. There are also many free Python courses on YouTube that once made me feel I benefited a lot. Many of these courses are concise and go straight to the point. They are not like many training institutions in China, which casually share seven-hundred-episode courses or eight-hundred-gigabyte study materials, making many people mistakenly think that liking and saving means learning. There are also many learning platforms at home and abroad. Some people like Udemy, and some people like Coursera. I am only sharing courses that I have watched myself and felt were good. Everyone can search on the corresponding platforms according to their own needs. Of course, what is more important is to study with a plan.
+> **Observação**: Os cursos de Andrew Ng também são compartilhados por muitas pessoas no YouTube e Bilibili. Existem também muitos cursos gratuitos de Python no YouTube que uma vez me fizeram sentir que me beneficiei muito. Muitos desses cursos são concisos e vão direto ao ponto. Não são como muitas instituições de formação na China, que partilham casualmente cursos de setecentos episódios ou materiais de estudo de oitocentos gigabytes, fazendo com que muitas pessoas pensem erroneamente que gostar e poupar significa aprender. Existem também muitas plataformas de aprendizagem no país e no exterior. Algumas pessoas gostam da Udemy e outras gostam do Coursera. Estou apenas compartilhando cursos que eu mesmo assisti e achei bons. Todos podem pesquisar nas plataformas correspondentes de acordo com suas necessidades. Claro, o mais importante é estudar com um plano.
 
-#### Resource Websites
+#### Sites de recursos
 
-1. [Python official website](https://python.org) - download the Python interpreter, read the official documentation, learn community news, and so on
-2. [Online Python](https://www.online-python.com/), [Python-Fiddle](https://python-fiddle.com/), [Google Colab](https://colab.research.google.com/) - write and run Python code online
-3. [Coddy](https://coddy.tech) - learn and practice Python online, a little like Duolingo for learning foreign languages
-4. [Django](https://www.djangoproject.com/), [FastAPI](https://fastapi.tiangolo.com/) official websites - Python service API development frameworks
-5. [NumPy](https://numpy.org/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/stable/) official websites - the three great tools of Python data analysis
-6. [Polars](https://pola.rs/) official website - a high-performance alternative to pandas
-7. [CuPy](https://cupy.dev/), [cuDF](https://github.com/rapidsai/cudf), [RAPIDS](https://rapids.ai/) official websites - use GPU to accelerate mathematical science
-8. [Scikit-learn](https://scikit-learn.org/stable/), [PyTorch](https://pytorch.org/), [TensorFlow](https://www.tensorflow.org/), [Keras](https://keras.io/) official websites - machine learning and deep learning frameworks
-9. [Hugging Face](https://huggingface.co/) official website - the `transformers` library provides a large number of pretrained models to help deep learning model development
-10. [Kaggle](https://www.kaggle.com/) official website - a globally famous data science and machine learning platform
-11. [GitHub](https://github.com/) official website - the world's largest code hosting platform, with many high-quality code repositories and resources
-12. [YouTube](https://www.youtube.com/) website - the world's largest video sharing platform, with many excellent learning videos
-13. [Bilibili](https://www.bilibili.com/) website - it was originally an ACG platform, and now it is also a learning platform for young people
-14. [China University MOOC](https://www.icourse163.org/), [NetEase Cloud Classroom](https://study.163.com/), [IMOOC](https://www.imooc.com/), [Udemy](), [Coursera](), [Udacity](), [edX](https://www.edx.org/) - online learning platforms
-15. [DeepLearning.ai](https://www.deeplearning.ai/) - a deep learning education platform founded by Andrew Ng
-16. [LeetCode](https://leetcode.cn/), [NowCoder](https://www.nowcoder.com/), [HackerRank](https://www.hackerrank.com/), [topcoder](https://www.topcoder.com/) - online problem-solving and competition platforms
-17. [NVIDIA Deep Learning Institute](https://link.zhihu.com/?target=https%3A//www.nvidia.cn/training/), [DataCamp](https://link.zhihu.com/?target=https%3A//www.datacamp.com/) - have both free and paid learning resources
-18. [BecomingHuman.ai](https://link.zhihu.com/?target=https%3A//becominghuman.ai/) - there are many AI topics there, and there are some beautiful cheat sheets
+1. [Site oficial do Python](https://python.org) - baixe o interpretador Python, leia a documentação oficial, conheça as novidades da comunidade e assim por diante
+2. [Python on-line](https://www.online-python.com/), [Python-Fiddle](https://python-fiddle.com/), [Google Co.](https://colab.research.google.com/) - escreva e execute código Python online
+3. [Coddy](https://coddy.tech) - aprenda e pratique Python online, um pouco como o Duolingo para aprender línguas estrangeiras
+4. [Django](https://www.djangoproject.com/), [API rápida](https://fastapi.tiangolo.com/) sites oficiais - estruturas de desenvolvimento de API de serviço Python
+5. Sites oficiais [NumPy](https://numpy.org/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/stable/) - as três grandes ferramentas de análise de dados Python
+6. Site oficial [polar](https://pola.rs/) - uma alternativa de alto desempenho aos pandas
+7. Sites oficiais [CuPy](https://cupy.dev/), [cuDF](https://github.com/rapidsai/cudf), [RÁPIDAS](https://rapids.ai/) - use GPU para acelerar a ciência matemática
+8. Sites oficiais [Scikit-aprender](https://scikit-learn.org/stable/), [PyTorch](https://pytorch.org/), [TensorFlow](https://www.tensorflow.org/), [Duro](https://keras.io/) - estruturas de aprendizado de máquina e aprendizado profundo
+9. Site oficial [Abraçando o rosto](https://huggingface.co/) - a biblioteca `transformers` fornece um grande número de modelos pré-treinados para ajudar no desenvolvimento de modelos de aprendizado profundo
+10. Site oficial [Kaggle](https://www.kaggle.com/) - uma plataforma de ciência de dados e aprendizado de máquina mundialmente famosa
+11. Site oficial [GitHub](https://github.com/) - a maior plataforma de hospedagem de código do mundo, com muitos repositórios e recursos de código de alta qualidade
+12. Site [YouTube](https://www.youtube.com/) - a maior plataforma de compartilhamento de vídeo do mundo, com muitos vídeos de aprendizagem excelentes
+13. Site [Bilíbili](https://www.bilibili.com/) - originalmente era uma plataforma ACG e agora também é uma plataforma de aprendizagem para jovens
+14. [MOOC da Universidade da China](https://www.icourse163.org/), [Sala de aula na nuvem NetEase](https://study.163.com/), [IMOOC](https://www.imooc.com/), [Udemy](), [Coursera](), [Udacity](), [edX](https://www.edx.org/) - plataformas de aprendizagem online
+15. [DeepLearning.ai](https://www.deeplearning.ai/) - uma plataforma de educação de aprendizagem profunda fundada por Andrew Ng
+16. [Código Leet](https://leetcode.cn/), [AgoraCoder](https://www.nowcoder.com/), [Classificação Hacker](https://www.hackerrank.com/), [codificador superior](https://www.topcoder.com/) - plataformas online de resolução de problemas e competição
+17. [Instituto de aprendizagem profunda NVIDIA](https://link.zhihu.com/?target=https%3A//www.nvidia.cn/training/), [DataCamp](https://link.zhihu.com/?target=https%3A//www.datacamp.com/) - possuem recursos de aprendizagem gratuitos e pagos
+18. [Tornando-seHuman.ai](https://link.zhihu.com/?target=https%3A//becominghuman.ai/) - há muitos tópicos de IA lá e algumas lindas folhas de dicas
 
-### Python Reference Books
+### Livros de referência de Python
 
-#### Beginner Reading
+#### Leitura para iniciantes
 
-1. *Python Crash Course* - the famous python snake book, recommended
-2. *Beginning Python From Novice to Professional* - a classic beginner book
-3. *Learning Python* - the famous mouse book
-4. *Introduction to Computation and Programming Using Python* - a book I like very much myself
+1. *Python Crash Course* - o famoso livro sobre cobra python, recomendado
+2. *Beginning Python From Novice to Professional* - um livro clássico para iniciantes
+3. *Aprendendo Python* – o famoso livro do mouse
+4. *Introdução à Computação e Programação Usando Python* - um livro que eu gosto muito
 
-#### Advanced Reading
+#### Leitura Avançada
 
-1. *Python Cookbook* - if you follow the recipes, surely nothing goes wrong; the first choice for going further
-2. *Fluent Python* - the road you must pass to become an expert
-3. *Effective Python: 59 Specific Ways to Write Better Python*
-4. *Expert Python Programming* - the famous flower book
-5. *Python Project Development Practice* - has a lot of knowledge about engineering project development
+1. *Python Cookbook* - se você seguir as receitas, certamente nada dará errado; a primeira escolha para ir mais longe
+2. *Fluent Python* - o caminho que você deve percorrer para se tornar um especialista
+3. *Python eficaz: 59 maneiras específicas de escrever Python melhor*
+4. *Expert Python Programming* - o famoso livro de flores
+5. *Prática de Desenvolvimento de Projetos Python* - tem muito conhecimento sobre desenvolvimento de projetos de engenharia
 
-#### Data Collection
+#### Coleta de dados
 
-1. *Python 3 Web Crawler Development in Practice* - personally recommended
-2. *Python Network Book Scraper* - the famous pangolin book
+1. *Desenvolvimento do Web Crawler em Python 3 na prática* - recomendado pessoalmente
+2. *Python Network Book Scraper* – o famoso livro do pangolim
 
-#### Data Analysis
+#### Análise de dados
 
-1. *Python for Data Analysis* - a book written by the author of pandas
-2. *Python Data Science Handbook* - the iguana book from the O'Reilly animal series
-3. *Python Data Analytics With Pandas, NumPy, and Matplotlib* - personally recommended
-4. *Python Data Visualization Cookbook* - focuses on data visualization
-5. *Principles of Data Science* - a book I like very much myself
-6. *Practical Statistics for Data Scientists* - very practical statistics
-7. *Data Science from Scratch*
+1. *Python for Data Analysis* – um livro escrito pelo autor de pandas
+2. *Python Data Science Handbook* - o livro sobre iguanas da série de animais O'Reilly
+3. *Python Data Analytics com Pandas, NumPy e Matplotlib* - recomendado pessoalmente
+4. *Python Data Visualization Cookbook* - concentra-se na visualização de dados
+5. *Princípios de Ciência de Dados* – um livro que eu gosto muito
+6. *Estatísticas Práticas para Cientistas de Dados* – estatísticas muito práticas
+7. *Ciência de dados do zero*
 
-#### Machine Learning
+#### Aprendizado de máquina
 
-1. *Machine Learning in Action* - recommended for beginners
-2. *Machine Learning (Iris Flower Mathematics Series: From Addition, Subtraction, Multiplication, and Division to Machine Learning)* - a very careful work by Dr. Jiang Weisheng
-3. *Deep Learning from Scratch: Theory and Implementation with Python* - an award-winning Japanese book, recommended for beginners
-4. *Deep Learning* - a classic great work on deep learning
-5. *Dive into Deep Learning* - produced by the strong combination of Aston Zhang and Li Mu
-6. *Deep Learning with Python* - a book I like very much myself
-7. *Hands-On Machine Learning with Scikit-Learn, Keras, and Tensorflow* - the famous lizard book, from machine learning to deep learning
+1. *Aprendizado de Máquina em Ação* - recomendado para iniciantes
+2. *Aprendizado de Máquina (Série Matemática Iris Flower: Da Adição, Subtração, Multiplicação e Divisão ao Aprendizado de Máquina)* - um trabalho muito cuidadoso do Dr.
+3. *Deep Learning from Scratch: Theory and Implementation with Python* - um livro japonês premiado, recomendado para iniciantes
+4. *Deep Learning* - um excelente trabalho clássico sobre aprendizagem profunda
+5. *Dive into Deep Learning* - produzido pela forte combinação de Aston Zhang e Li Mu
+6. *Deep Learning with Python* - um livro que eu gosto muito
+7. *Aprendizado de máquina prático com Scikit-Learn, Keras e Tensorflow* - o famoso livro sobre lagartos, do aprendizado de máquina ao aprendizado profundo
 
-#### Large Models
+#### Modelos Grandes
 
-1. *Getting Started with Google BERT* - a five-star reviewed book
-2. *Build a Large Language Model*
-3. *Hands-On Large Language Models*
-4. *Developing Apps with GPT-4 and ChatGPT* - a very simple introduction to large model application development
+1. *Introdução ao Google BERT* – um livro com resenha de cinco estrelas
+2. *Construa um modelo de linguagem amplo*
+3. *Modelos práticos de grandes idiomas*
+4. *Desenvolvendo aplicativos com GPT-4 e ChatGPT* - uma introdução muito simples ao desenvolvimento de aplicativos de grandes modelos
 
-#### Testing and Operations
+#### Testes e Operações
 
-1. *Learning Selenium Testing Tools with Python*
-2. *Python Testing with pytest*
-3. *Hands-On Enterprise Automation with Python*
-4. *Python Automated Operations Technology and Best Practice*
+1. *Aprendendo ferramentas de teste Selenium com Python*
+2. *Teste Python com pytest*
+3. *Automação empresarial prática com Python*
+4. *Tecnologia e práticas recomendadas de operações automatizadas Python*

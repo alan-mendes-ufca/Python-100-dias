@@ -1,14 +1,12 @@
-"""
-A class decorator implementing the singleton pattern.
-A singleton class can create only one instance.
-"""
+"""Um decorador de classe que implementa o padrão singleton.
+Uma classe singleton pode criar apenas uma instância."""
 import threading
 
 from functools import wraps
 
 
 def singleton(cls):
-    """Singleton decorator."""
+    """Decorador singleton."""
     instances = {}
     lock = threading.Lock()
 

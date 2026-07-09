@@ -5,7 +5,7 @@ import java.util.Collections;
 class Test03 {
 
     /**
-     * Generate a random integer in the range [min, max).
+     * Gere um número inteiro aleatório no intervalo [min, max).
      */
     public static int randomInt(int min, int max) {
         return (int) (Math.random() * (max - min) + min);

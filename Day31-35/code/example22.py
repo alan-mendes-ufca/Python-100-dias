@@ -1,11 +1,9 @@
-"""
-Using multiple processes and process pools.
-For CPU-bound tasks, multiprocessing is often better than multithreading.
-time python3 example22.py
-real    0m11.512s
-user    0m39.319s
-sys     0m0.169s
-"""
+"""Usando vários processos e pools de processos.
+Para tarefas vinculadas à CPU, o multiprocessamento geralmente é melhor que o multithreading.
+tempo python3 exemplo22.py
+0m11.512s reais
+usuário 0m39.319s
+sistema 0m0.169s"""
 import concurrent.futures
 import math
 
@@ -27,7 +25,7 @@ PRIMES = [
 
 
 def is_prime(n):
-    """Check whether a number is prime."""
+    """Verifique se um número é primo."""
     if n % 2 == 0:
         return False
 
@@ -39,7 +37,7 @@ def is_prime(n):
 
 
 def main():
-    """Program entry point."""
+    """Ponto de entrada do programa."""
     with concurrent.futures.ProcessPoolExecutor() as executor:
         for number, prime in zip(PRIMES, executor.map(is_prime, PRIMES)):
             print('%d is prime: %s' % (number, prime))

@@ -1,17 +1,17 @@
-## Small Tips for Using Python Containers
+## Pequenas dicas para usar contêineres Python
 
-Python’s main built-in containers are:
+Os principais contêineres integrados do Python são:
 
 - `list`
 - `tuple`
 - `set`
 - `dict`
 
-This note focuses on practical usage habits such as:
+Esta nota se concentra em hábitos práticos de uso, como:
 
-- choosing the right container for the job
-- using comprehensions
-- avoiding unnecessary conversions
-- using set and dict operations to simplify code
+- escolhendo o contêiner certo para o trabalho
+- usando compreensões
+- evitando conversões desnecessárias
+- usando operações set e dict para simplificar o código
 
-The overall theme is that many everyday problems become simpler once you are fluent with container operations.
+O tema geral é que muitos problemas cotidianos se tornam mais simples quando você se torna fluente nas operações de contêineres.

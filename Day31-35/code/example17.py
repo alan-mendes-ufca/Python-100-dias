@@ -1,7 +1,5 @@
-"""
-Multiple inheritance and method resolution order (MRO).
-This example shows the diamond-inheritance shape and Python 3's C3 MRO.
-"""
+"""Herança múltipla e ordem de resolução de método (MRO).
+Este exemplo mostra a forma de herança de diamante e o C3 MRO do Python 3."""
 class A():
 
     def say_hello(self):
@@ -23,7 +21,7 @@ class D(B, C):
 
 
 class SetOnceMappingMixin():
-    """Custom mixin class."""
+    """Classe mixin personalizada."""
     __slots__ = ()
 
     def __setitem__(self, key, value):
@@ -33,7 +31,7 @@ class SetOnceMappingMixin():
 
 
 class SetOnceDict(SetOnceMappingMixin, dict):
-    """Custom dictionary."""
+    """Dicionário personalizado."""
     pass
 
 

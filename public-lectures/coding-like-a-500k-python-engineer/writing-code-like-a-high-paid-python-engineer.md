@@ -1,29 +1,29 @@
-## How High-Income Python Developers Write Code
+## Como os desenvolvedores Python de alta renda escrevem código
 
-This public lecture argues that Python is a strong choice when development efficiency matters more than raw execution speed.
+Esta palestra pública argumenta que Python é uma escolha forte quando a eficiência do desenvolvimento é mais importante do que a velocidade bruta de execução.
 
-### Why Python
+### Por que Python
 
-The lecture compares Python with languages such as C and Java using very small examples:
+A palestra compara Python com linguagens como C e Java usando exemplos muito pequenos:
 
 - `hello, world`
-- summing numbers from 1 to 100
-- creating and initializing arrays / lists
+- somando números de 1 a 100
+- criando e inicializando arrays/listas
 
-The main point is that Python usually expresses the same idea with less code and less ceremony.
+O ponto principal é que Python geralmente expressa a mesma ideia com menos código e menos cerimônia.
 
-### What Good Python Code Looks Like
+### Qual é a aparência de um bom código Python
 
-The lecture’s core message is not just "use less code." It is:
+A mensagem central da palestra não é apenas “use menos código”. Isso é:
 
-- write clearly
-- use built-in tools where possible
-- prefer readable solutions over boilerplate
-- understand the language deeply enough to express ideas directly
+- escreva claramente
+- use ferramentas integradas sempre que possível
+- prefira soluções legíveis em vez de clichês
+- compreender a linguagem profundamente o suficiente para expressar ideias diretamente
 
-In practice, strong Python code tends to be:
+Na prática, um código Python forte tende a ser:
 
-- concise
-- readable
-- idiomatic
-- productive to maintain
+- conciso
+- legível
+- idiomático
+- produtivo para manter

@@ -1,7 +1,5 @@
-"""
-Thread synchronization with locks, semaphores, and conditions.
-This example uses a condition variable to coordinate deposits and withdrawals.
-"""
+"""Sincronização de threads com bloqueios, semáforos e condições.
+Este exemplo usa uma variável de condição para coordenar depósitos e retiradas."""
 from concurrent.futures import ThreadPoolExecutor
 from random import randint
 from time import sleep
@@ -10,7 +8,7 @@ import threading
 
 
 class Account():
-    """Bank account."""
+    """Conta bancária."""
 
     def __init__(self, balance=0):
         self.balance = balance
@@ -18,7 +16,7 @@ class Account():
         self.condition = threading.Condition(lock)
 
     def withdraw(self, money):
-        """Withdraw money."""
+        """Retire dinheiro."""
         with self.condition:
             while money > self.balance:
                 self.condition.wait()
@@ -27,7 +25,7 @@ class Account():
             self.balance = new_balance
 
     def deposit(self, money):
-        """Deposit money."""
+        """Deposite dinheiro."""
         with self.condition:
             new_balance = self.balance + money
             sleep(0.001)

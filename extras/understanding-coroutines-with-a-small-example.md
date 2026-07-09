@@ -1,11 +1,11 @@
-## A Small Example to Truly Understand Coroutines
+## Um pequeno exemplo para realmente compreender as corrotinas
 
-This note uses a minimal example to explain coroutines intuitively.
+Esta nota usa um exemplo mínimo para explicar corrotinas intuitivamente.
 
-The purpose is to show:
+O objetivo é mostrar:
 
-- what a coroutine is
-- how control is yielded
-- how multiple tasks cooperate without traditional threading
+- o que é uma corrotina
+- como o controle é obtido
+- como múltiplas tarefas cooperam sem threading tradicional
 
-Coroutines become much easier to understand once you stop thinking of them as "magic async syntax" and start seeing them as controlled suspension and resumption of execution.
+As corrotinas se tornam muito mais fáceis de entender quando você para de pensar nelas como "sintaxe assíncrona mágica" e começa a vê-las como suspensão controlada e retomada de execução.

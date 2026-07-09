@@ -1,7 +1,5 @@
-"""
-Object-oriented example using enums.
-An enum is ideal when a value must come from a fixed set of choices.
-"""
+"""Exemplo orientado a objetos usando enums.
+Um enum é ideal quando um valor deve vir de um conjunto fixo de opções."""
 from enum import Enum, unique
 
 import random
@@ -9,7 +7,7 @@ import random
 
 @unique
 class Suite(Enum):
-    """Card suit."""
+    """Naipe de cartas."""
     SPADE, HEART, CLUB, DIAMOND = range(4)
 
     def __lt__(self, other):
@@ -17,7 +15,7 @@ class Suite(Enum):
 
 
 class Card():
-    """Playing card."""
+    """Carta de jogo."""
     
     def __init__(self, suite, face):
         self.suite = suite
@@ -34,7 +32,7 @@ class Card():
 
 
 class Poker():
-    """Deck of cards."""
+    """Baralho de cartas."""
     
     def __init__(self):
         self.index = 0
@@ -43,40 +41,40 @@ class Poker():
                       for face in range(1, 14)]
 
     def shuffle(self):
-        """Shuffle the deck."""
+        """Embaralhe o baralho."""
         self.index = 0
         random.shuffle(self.cards)
 
     def deal(self):
-        """Deal one card."""
+        """Distribua uma carta."""
         card = self.cards[self.index]
         self.index += 1
         return card
 
     @property
     def has_more(self):
-        """Whether there are more cards."""
+        """Se há mais cartões."""
         return self.index < len(self.cards)
 
 
 class Player():
-    """Player."""
+    """Jogador."""
 
     def __init__(self, name):
         self.name = name
         self.cards = []
 
     def get_card(self, card):
-        """Take one card."""
+        """Pegue um cartão."""
         self.cards.append(card)
 
     def arrange(self):
-        """Sort the cards in hand."""
+        """Classifique as cartas em mãos."""
         self.cards.sort(key=lambda card: (card.suite, card.face))
 
 
 def main():
-    """Program entry point."""
+    """Ponto de entrada do programa."""
     poker = Poker()
     poker.shuffle()
     players = [

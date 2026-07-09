@@ -1,19 +1,17 @@
-"""
-Encoding and decoding with BASE64
+"""Codificação e decodificação com BASE64
 0-9A-Za-z+/
 1100 0101 1001 0011 0111 0110
 00110001 00011001 00001101 00110110
 base64
-b64encode / b64decode
+b64encode /b64decode
 -------------------------------------
-Serialization and deserialization
-Serialization turns objects into byte or text representations.
-Deserialization rebuilds objects from those representations.
-Python standard-library support:
-json - text-based serialization
-pickle - byte-based serialization
-dumps / loads
-"""
+Serialização e desserialização
+A serialização transforma objetos em representações de bytes ou texto.
+A desserialização reconstrói objetos a partir dessas representações.
+Suporte à biblioteca padrão Python:
+json - serialização baseada em texto
+pickle - serialização baseada em bytes
+despejos / cargas"""
 import base64
 import json
 import redis

@@ -1,8 +1,6 @@
-"""
-Searching: sequential search and binary search.
+"""Pesquisa: pesquisa sequencial e pesquisa binária.
 
-The chart in `main` compares several common time-complexity classes.
-"""
+O gráfico em `main` compara várias classes comuns de complexidade de tempo."""
 from math import log2, factorial
 from matplotlib import pyplot
 
@@ -10,7 +8,7 @@ import numpy
 
 
 def seq_search(items: list, elem) -> int:
-    """Sequential search."""
+    """Pesquisa sequencial."""
     for index, item in enumerate(items):
         if elem == item:
             return index
@@ -18,7 +16,7 @@ def seq_search(items: list, elem) -> int:
 
 
 def bin_search(items, elem):
-    """Binary search."""
+    """Pesquisa binária."""
     start, end = 0, len(items) - 1
     while start <= end:
         mid = (start + end) // 2
@@ -32,7 +30,7 @@ def bin_search(items, elem):
 
 
 def main():
-    """Program entry point."""
+    """Ponto de entrada do programa."""
     num = 6
     styles = ['r-.', 'g-*', 'b-o', 'y-x', 'c-^', 'm-+', 'k-d']
     legends = ['logarithmic', 'linear', 'linearithmic', 'quadratic', 'cubic', 'geometric', 'factorial']

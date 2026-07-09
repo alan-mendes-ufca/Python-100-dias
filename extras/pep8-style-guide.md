@@ -1,14 +1,14 @@
-## PEP 8 Style Guide
+## Guia de Estilo PEP 8
 
-PEP 8 is the official Python style guide. Its main goal is readability and consistency.
+PEP 8 é o guia de estilo oficial do Python. Seu principal objetivo é legibilidade e consistência.
 
-Important ideas include:
+Ideias importantes incluem:
 
-- use clear naming
-- keep line length under control
-- use spaces consistently
-- group imports clearly
-- format functions and classes predictably
-- write readable comments and docstrings
+- usar nomenclatura clara
+- mantenha o comprimento da linha sob controle
+- use espaços de forma consistente
+- importações de grupo claramente
+- formatar funções e classes de forma previsível
+- escreva comentários e documentos legíveis
 
-PEP 8 is not about decoration. It is about making code easier for other people, and your future self, to read and maintain.
+O PEP 8 não é uma questão de decoração. Trata-se de tornar o código mais fácil para outras pessoas, e para você no futuro, ler e manter.

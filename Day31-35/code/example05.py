@@ -1,7 +1,5 @@
-"""
-Recursive backtracking searches forward and retries when a choice fails.
-Classic example: the knight's tour.
-"""
+"""O retrocesso recursivo pesquisa adiante e tenta novamente quando uma escolha falha.
+Exemplo clássico: o passeio do cavaleiro."""
 import os
 import sys
 import time
@@ -11,7 +9,7 @@ total = 0
 
 
 def print_board(board):
-    # os.system('clear')
+    # os.system('limpar')
     for row in board:
         for col in row:
             print(str(col).center(4), end='')

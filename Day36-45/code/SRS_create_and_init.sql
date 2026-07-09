@@ -1,13 +1,13 @@
--- Drop the `school` database if it already exists
+-- Elimine o banco de dados `school` se ele já existir
 drop database if exists `school`;
 
--- Create a database named `school` with the default character set
+-- Crie um banco de dados chamado `school` com o conjunto de caracteres padrão
 create database `school` default charset utf8mb4;
 
--- Switch to the `school` database context
+-- Mude para o contexto do banco de dados `school`
 use `school`;
 
--- Create the college table
+-- Crie a mesa da faculdade
 create table `tb_college`
 (
 `col_id` int unsigned auto_increment comment 'id',
@@ -16,7 +16,7 @@ create table `tb_college`
 primary key (`col_id`)
 ) engine=innodb comment 'college table';
 
--- Create the student table
+-- Crie a tabela do aluno
 create table `tb_student`
 (
 `stu_id` int unsigned not null comment 'student id',
@@ -29,7 +29,7 @@ primary key (`stu_id`),
 foreign key (`col_id`) references `tb_college` (`col_id`)
 ) engine=innodb comment 'student table';
 
--- Create the teacher table
+-- Crie a tabela do professor
 create table `tb_teacher`
 (
 `tea_id` int unsigned not null comment 'employee id',
@@ -40,7 +40,7 @@ primary key (`tea_id`),
 foreign key (`col_id`) references `tb_college` (`col_id`)
 ) engine=innodb comment 'teacher table';
 
--- Create the course table
+-- Crie a tabela do curso
 create table `tb_course`
 (
 `cou_id` int unsigned not null comment 'id',
@@ -51,7 +51,7 @@ primary key (`cou_id`),
 foreign key (`tea_id`) references `tb_teacher` (`tea_id`)
 ) engine=innodb comment 'course table';
 
--- Create the course-selection record table
+-- Crie a tabela de registros de seleção de cursos
 create table `tb_record`
 (
 `rec_id` bigint unsigned auto_increment comment 'selection record id',
@@ -65,7 +65,7 @@ foreign key (`cid`) references `tb_course` (`cou_id`),
 unique (`sid`, `cid`)
 ) engine=innodb comment 'course-selection record table';
 
--- Insert college data
+-- Insira dados da faculdade
 insert into `tb_college` 
     (`col_name`, `col_intro`) 
 values 
@@ -73,7 +73,7 @@ values
     ('School of Foreign Languages', 'This school includes several teaching units and undergraduate majors, plus doctoral and master''s degree authorization in multiple disciplines. Its faculty includes more than 200 staff members, with a large share of teachers holding or pursuing doctoral degrees from leading universities in China and abroad.'),
     ('School of Economics and Management', 'The school traces its roots to an economics program founded in 1905 and has been associated with several well-known economists and scholars over the years.');
 
--- Insert student data
+-- Inserir dados do aluno
 insert into `tb_student` 
     (`stu_id`, `stu_name`, `stu_sex`, `stu_birth`, `stu_addr`, `col_id`) 
 values
@@ -88,7 +88,7 @@ values
     (3755, 'Xiang Shaolong', 1, '1993-1-25', null, 3),
     (3923, 'Yang Buhui', 0, '1985-4-17', 'Chengdu, Sichuan', 3);
 
--- Insert teacher data
+-- Inserir dados do professor
 insert into `tb_teacher` 
     (`tea_id`, `tea_name`, `tea_title`, `col_id`) 
 values 
@@ -98,7 +98,7 @@ values
     (2255, 'Fan Yao', 'Associate Professor', 2),
     (3366, 'Wei Yixiao', default, 3);
 
--- Insert course data
+-- Inserir dados do curso
 insert into `tb_course` 
     (`cou_id`, `cou_name`, `cou_credit`, `tea_id`) 
 values 
@@ -112,7 +112,7 @@ values
     (8888, 'Cost Accounting', 2, 3366),
     (9999, 'Auditing', 3, 3366);
 
--- Insert course-selection data
+-- Inserir dados de seleção de curso
 insert into `tb_record` 
     (`sid`, `cid`, `sel_date`, `score`) 
 values 

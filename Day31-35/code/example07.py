@@ -1,29 +1,26 @@
-"""
-Hash digests, digital signatures, and one-way hash functions.
+"""Resumos de hash, assinaturas digitais e funções de hash unidirecionais.
 
-Applications:
-1. Storing sensitive data as digests
-2. Signing data to detect tampering
-3. Deduplication in cloud storage
-"""
+Aplicações:
+1. Armazenando dados confidenciais como resumos
+2. Assinatura de dados para detecção de adulteração
+3. Desduplicação no armazenamento em nuvem"""
 
 
 class StreamHasher():
-    """Digest generator."""
+    """Gerador de resumo."""
 
     def __init__(self, algorithm='md5', size=4096):
-        """Initializer.
+        """Inicializador.
         @params:
-            algorithm - hashing algorithm
-            size - read chunk size
-        """
+            algoritmo - algoritmo de hash
+            size - leia o tamanho do pedaço"""
         self.size = size
         cls = getattr(__import__('hashlib'), algorithm.lower())
         self.hasher = cls()
     
 
     def digest(self, file_stream):
-        """Generate a hexadecimal digest string."""
+        """Gere uma string de resumo hexadecimal."""
         # data = file_stream.read(self.size)
         # while data:
         #     self.hasher.update(data)
@@ -37,7 +34,7 @@ class StreamHasher():
 
 
 def main():
-    """Program entry point."""
+    """Ponto de entrada do programa."""
     hasher1 = StreamHasher()
     hasher2 = StreamHasher('sha1')
     hasher3 = StreamHasher('sha256')

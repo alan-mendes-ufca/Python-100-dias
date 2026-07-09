@@ -1,18 +1,18 @@
-## Pitfalls We Ran Into Over the Years
+## Armadilhas que encontramos ao longo dos anos
 
-This note collects subtle Python pitfalls that easily confuse learners.
+Esta nota coleta armadilhas sutis do Python que confundem facilmente os alunos.
 
-### Pitfall 1: Integer Comparison
+### Armadilha 1: comparação de números inteiros
 
-It explains the difference between:
+Explica a diferença entre:
 
-- `==`: value equality
-- `is`: identity comparison
+- `==`: igualdade de valor
+- `is`: comparação de identidade
 
-It then uses CPython’s small-integer caching behavior to show why `is` can produce surprising results with integers.
+Em seguida, ele usa o comportamento de cache de números inteiros pequenos do CPython para mostrar por que `is` pode produzir resultados surpreendentes com números inteiros.
 
-### Pitfall 2: Nested Lists
+### Armadilha 2: listas aninhadas
 
-The note also covers the classic nested-list trap where repeated inner lists may refer to the same object, causing unexpected shared updates.
+A nota também aborda a armadilha clássica de lista aninhada, em que listas internas repetidas podem se referir ao mesmo objeto, causando atualizações compartilhadas inesperadas.
 
-The overall lesson is that Python often looks simple on the surface, but object identity and shared references still matter.
+A lição geral é que Python geralmente parece simples superficialmente, mas a identidade do objeto e as referências compartilhadas ainda são importantes.

@@ -1,4 +1,4 @@
--- Transaction table
+-- Tabela de transações
 CREATE TABLE `transaction` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `order_sn` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'transaction number',
@@ -16,7 +16,7 @@ CREATE TABLE `transaction` (
   KEY `transaction_order_sn_member_id_pay_state_source_status_index` (`order_sn`(191),`member_id`,`pay_state`,`source`(191),`status`)
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Transaction record table
+-- Tabela de registro de transações
 CREATE TABLE `transaction_record` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `order_sn` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE `transaction_record` (
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
--- Order table
+-- Tabela de pedidos
 CREATE TABLE `order` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `order_no` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'order number',
@@ -60,7 +60,7 @@ CREATE TABLE `order` (
   KEY `order_order_sn_member_id_order_status_out_trade_no_index` (`order_sn`,`member_id`,`order_status`,`out_trade_no`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- After-sales application table
+-- Tabela de aplicação pós-venda
 CREATE TABLE `order_returns_apply` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `order_no` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'order number',
@@ -79,7 +79,7 @@ CREATE TABLE `order_returns_apply` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- After-sales record table
+-- Tabela de registro pós-venda
 CREATE TABLE `order_returns` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `returns_no` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'return number for customer lookup',
@@ -108,7 +108,7 @@ CREATE TABLE `order_returns` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Review table
+-- Tabela de revisão
 CREATE TABLE `order_appraise` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `order_id` int(11) NOT NULL COMMENT 'order id',

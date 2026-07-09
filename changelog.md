@@ -1,61 +1,61 @@
-## Changelog
+## Registro de alterações
 
-### December 7, 2025
+### 7 de dezembro de 2025
 
-1. Updated some resource files and problems that existed in the documents.
-2. Updated the "Python Learning Resources Summary" that everyone likes to read most.
+1. Atualizados alguns arquivos de recursos e problemas que existiam nos documentos.
+2. Atualizado o "Resumo dos recursos de aprendizagem do Python" que todos mais gostam de ler.
 
 <img src="res/donation10.png" style="zoom:44%;">
 
-### March 4, 2025
+### 4 de março de 2025
 
-1. Added code and resources for the Python data analysis part.
-2. Corrected some typos and invalid links in the documents.
+1. Adicionados código e recursos para a parte de análise de dados Python.
+2. Corrigidos alguns erros de digitação e links inválidos nos documentos.
 
-### February 18, 2025
+### 18 de fevereiro de 2025
 
-1. Solved the problem that mathematical formulas could not be displayed.
-2. Corrected and supplemented the documents in the machine learning part.
+1. Resolveu o problema de que as fórmulas matemáticas não podiam ser exibidas.
+2. Corrigidos e complementados os documentos da parte de aprendizado de máquina.
 
-### January 30, 2025
+### 30 de janeiro de 2025
 
-1. Updated the content of the Day 01-20 "Python Language Basics" part.
-2. Updated the content of the Day 21-30 "Python Language Applications" part.
-3. Adjusted the directory structure of the project.
-4. Corrected problems that existed in some resource files.
+1. Atualizado o conteúdo da parte "Noções básicas da linguagem Python" dos dias 01 a 20.
+2. Atualizado o conteúdo da parte "Aplicativos da linguagem Python" dos dias 21 a 30.
+3. Ajustou a estrutura de diretórios do projeto.
+4. Corrigidos problemas que existiam em alguns arquivos de recursos.
 
-### January 22, 2025
+### 22 de janeiro de 2025
 
-1. Completed the content of the "Machine Learning" part.
-2. Updated errors that existed in some documents.
-3. Restarted a separate project to explore content related to deep learning.
+1. Concluído o conteúdo da parte “Aprendizado de Máquina”.
+2. Erros atualizados que existiam em alguns documentos.
+3. Reiniciei um projeto separado para explorar conteúdo relacionado ao aprendizado profundo.
 
-### April 18, 2024
+### 18 de abril de 2024
 
-1. Reorganized the project structure and supplemented part of the documents.
-2. Prepared to start writing the "Machine Learning and Deep Learning" part.
+1. Reorganizou a estrutura do projeto e complementou parte dos documentos.
+2. Preparado para começar a escrever a parte "Machine Learning e Deep Learning".
 
-### January 11, 2022
+### 11 de janeiro de 2022
 
-1. Donated the recent tips received through Shuidichou and Zhongyuan Puji Charity Promotion Association to people in need.
+1. Doou as dicas recentes recebidas por meio da Associação de Promoção de Caridade Shuidichou e Zhongyuan Puji para pessoas necessitadas.
 
    <img src="res/donation9.png" style="zoom:20%;">
 
-### November 22, 2021
+### 22 de novembro de 2021
 
-1. Updated the documents and code for the database part.
-2. Corrected bugs in the documents and code that readers pointed out.
-3. Updated the group information in the README file.
+1. Atualizados os documentos e o código da parte do banco de dados.
+2. Bugs corrigidos nos documentos e códigos apontados pelos leitores.
+3. Atualizadas as informações do grupo no arquivo README.
 
-### October 7, 2021
+### 7 de outubro de 2021
 
-1. Adjusted the project directory structure.
-2. Updated the content of the data analysis part.
+1. Ajustou a estrutura de diretórios do projeto.
+2. Atualizado o conteúdo da parte de análise de dados.
 
-### March 28, 2021
+### 28 de março de 2021
 
-1. Recently I sorted out the data mining things again and am preparing to start writing documents.
-2. Donated the recent tips received through Meituan Charity to people in need.
+1. Recentemente resolvi novamente as questões de mineração de dados e estou me preparando para começar a escrever documentos.
+2. Doou as gorjetas recentes recebidas através da Meituan Charity para pessoas necessitadas.
 
    <img src="res/donation6.png" style="zoom:50%;">
 
@@ -63,93 +63,93 @@
 
    <img src="res/donation8.png" style="zoom:44%;">
 
-### October 3, 2020
+### 3 de outubro de 2020
 
-1. Adjusted the project directory structure.
-2. Started the work of filling in the missing earlier content and updating the last part.
-3. Donated the recent tips received through platforms such as Shuidichou to people who needed help.
+1. Ajustou a estrutura de diretórios do projeto.
+2. Iniciou o trabalho de preenchimento do conteúdo anterior que faltava e atualização da última parte.
+3. Doou as dicas recentes recebidas por meio de plataformas como Shuidichou para pessoas que precisavam de ajuda.
 
-### July 12, 2020
+### 12 de julho de 2020
 
-1. Corrected bugs in some documents.
-2. Updated the documents in the Django part.
-3. Donated the recent tips received to Shaanxi Huigui Children's Rescue Center.
+1. Bugs corrigidos em alguns documentos.
+2. Atualizados os documentos na parte do Django.
+3. Doou as dicas recentes recebidas ao Centro de Resgate Infantil Shaanxi Huigui.
 
    <img src="res/donation5.png" style="zoom:50%;">
 
-### April 8, 2020
+### 8 de abril de 2020
 
-1. Re-created the basic part (Day 1 to Day 15) in a repository named "Python-Core-50-Courses" and updated part of the content.
-2. Updated the `README.md` file.
-3. Donated the recent tips received through Tencent Charity to support "Children's Health Classroom".
+1. Recriei a parte básica (Dia 1 ao Dia 15) em um repositório chamado "Python-Core-50-Courses" e atualizei parte do conteúdo.
+2. Atualizado o arquivo `README.md`.
+3. Doou as dicas recentes recebidas através da Tencent Charity para apoiar a "Sala de Aula de Saúde Infantil".
 
    <img src="res/donation4.png" style="zoom:50%;">
 
-### March 8, 2020
+### 8 de março de 2020
 
-1. Updated some documents in the last 10 days.
-2. Donated the recent tips through Meituan Charity to children affected by the epidemic.
+1. Atualizados alguns documentos nos últimos 10 dias.
+2. Doou as dicas recentes por meio da Meituan Charity para crianças afetadas pela epidemia.
 
    <img src="res/donation3.png" style="zoom:50%;">
 
-### March 1, 2020
+### 1º de março de 2020
 
-1. Optimized some image resources in the project.
-2. Updated some documents.
+1. Otimizou alguns recursos de imagem no projeto.
+2. Atualizados alguns documentos.
 
-### September 23, 2019
+### 23 de setembro de 2019
 
-1. Planned to complete the update of Day 91 to Day 100 before the National Day holiday ends, including the newest Python interview question collection.
-2. Modified the content of Day 7 "Strings and Common Data Structures".
+1. Planejado para concluir a atualização do dia 91 ao dia 100 antes do feriado do Dia Nacional terminar, incluindo a mais nova coleção de perguntas da entrevista em Python.
+2. Modificado o conteúdo do Dia 7 "Strings e Estruturas de Dados Comuns".
 
-### September 15, 2019
+### 15 de setembro de 2019
 
-1. Donated the income from WeChat tips through Tencent Charity to national-level poor college students.
+1. Doou a renda das gorjetas do WeChat por meio da Tencent Charity para estudantes universitários pobres de nível nacional.
 
    <img src="./res/donation2.png" style="zoom:50%;">
 
-2. Started updating and adjusting the content from Day 1 to Day 15.
-3. Started organizing the long-awaited "Complete Python Interview Questions and Reference Answers".
+2. Comecei a atualizar e ajustar o conteúdo do dia 1 ao dia 15.
+3. Comecei a organizar as tão esperadas "Perguntas completas da entrevista em Python e respostas de referência".
 
-### August 12, 2019
+### 12 de agosto de 2019
 
-1. Published the article "Build Your Own Blog with Hexo".
+1. Publicou o artigo "Construa seu próprio blog com Hexo".
 
-### August 8, 2019
+### 8 de agosto de 2019
 
-1. Recently the company arranged many tasks for me, so I did not update this project for a long time. Today I finally finished updating the "Relational Database MySQL" part that I had planned to update for a long time.
-2. Yesterday WeChat payment reminded me that I had received tips for 48 consecutive days. Thank you very much for everyone's continuous support.
-3. Recently I have been planning to record a matching video for this project. Of course the huge amount of work can be imagined, but I still decided to start doing this before the end of the year, so that I will not let down so many people who want to learn and understand Python through this project.
+1. Recentemente a empresa providenciou muitas tarefas para mim, então fiquei muito tempo sem atualizar esse projeto. Hoje finalmente terminei de atualizar a parte "Banco de Dados Relacional MySQL" que já planejava atualizar há muito tempo.
+2. Ontem o pagamento do WeChat me lembrou que recebi gorjetas por 48 dias consecutivos. Muito obrigado pelo apoio contínuo de todos.
+3. Recentemente tenho planejado gravar um vídeo correspondente para este projeto. Claro que se pode imaginar a enorme quantidade de trabalho, mas mesmo assim decidi começar a fazer isso antes do final do ano, para não decepcionar tantas pessoas que querem aprender e entender Python por meio deste projeto.
 
-### July 11, 2019
+### 11 de julho de 2019
 
-1. Today I finally ended the days of being on a business trip. After coming back I first donated all the recent tips received through the Tencent Charity platform to Green Leaf, a total of 111 tips.
+1. Hoje finalmente terminei os dias de viagem de negócios. Depois de voltar, doei primeiro todas as gorjetas recentes recebidas através da plataforma Tencent Charity para a Green Leaf, num total de 111 gorjetas.
 
    <img src="./res/donation1.png" style="zoom:128%">
 
-### July 9, 2019
+### 9 de julho de 2019
 
-1. Recently I was on a business trip, and the project stayed in a stopped-update state. Many beginners in the study group said that the content started to become difficult from Day 8. Recently I had also planned to reorganize the language basics part and the crawler part once again. This time I will try to make the text and cases more easy to understand and more practical. This work has already started today. The final goal is to organize this part into a book. I hope everyone can continue to support it as always.
-2. In a little more than one recent week I received more than 60 tips in total, and on the busiest day I received 14 tips. I still want to thank everyone again for paying for knowledge. Of course joining the study group does not require payment. The money you pay will be used to support education for children in mountain areas.
-3. Today I retranslated the *Zen of Python*. I like this version myself, so I am also sharing it with everyone.
+1. Recentemente, eu estava em uma viagem de negócios e o projeto permaneceu em estado de atualização interrompida. Muitos iniciantes no grupo de estudo disseram que o conteúdo começou a ficar difícil a partir do dia 8. Recentemente, também planejei reorganizar a parte básica do idioma e a parte do rastreador mais uma vez. Desta vez tentarei tornar o texto e os casos mais fáceis de entender e mais práticos. Este trabalho já começou hoje. O objetivo final é organizar esta parte em um livro. Espero que todos possam continuar a apoiá-lo como sempre.
+2. Em pouco mais de uma semana recebi mais de 60 dicas no total, e no dia de maior movimento recebi 14 dicas. Ainda quero agradecer a todos novamente por pagarem pelo conhecimento. É claro que ingressar no grupo de estudos não exige pagamento. O dinheiro que você pagar será usado para apoiar a educação de crianças em áreas montanhosas.
+3. Hoje retraduzi o *Zen do Python*. Eu também gosto desta versão, então também estou compartilhando com todos.
 
-### June 30, 2019
+### 30 de junho de 2019
 
-1. In the last 2 days I received 11 tips in total.
-2. I finally finished updating Day 48 "Frontend-Backend Separation Development", but even I feel it may look a little like making up numbers. I did not spend too much thought on the written description. Everyone can refer to the project code to understand frontend-backend separation development. The project uses Vue.js, but does not use scaffolding tools and does not configure frontend routing. It only uses Vue.js to render pages. After all, I myself am not a professional frontend developer.
+1. Nos últimos 2 dias recebi 11 dicas no total.
+2. Finalmente terminei de atualizar o dia 48 "Desenvolvimento de separação front-end-backend", mas até eu sinto que pode parecer um pouco como inventar números. Não pensei muito na descrição escrita. Todos podem consultar o código do projeto para entender o desenvolvimento da separação front-end-backend. O projeto utiliza Vue.js, mas não utiliza ferramentas de scaffolding e não configura roteamento de frontend. Ele usa apenas Vue.js para renderizar páginas. Afinal, eu não sou um desenvolvedor front-end profissional.
 
-### June 27, 2019
+### 27 de junho de 2019
 
-1. In the last 3 days I received 35 tips in total. Thank you for everyone's continuous attention.
-2. There have been many things recently, and the update speed may slow down. Please understand.
-3. Tonight the materials related to the public course have already been updated into the public course directory.
+1. Nos últimos 3 dias recebi 35 dicas no total. Obrigado pela atenção contínua de todos.
+2. Houve muitas coisas recentemente e a velocidade de atualização pode diminuir. Por favor, entenda.
+3. Esta noite os materiais relacionados ao curso público já foram atualizados no diretório de cursos públicos.
 
-### June 23, 2019
+### 23 de junho de 2019
 
-1. In the last few days I received 25 tips in total. Thank you for everyone's support.
-2. Updated the QQ study group and recreated a 2000-person group.
+1. Nos últimos dias recebi 25 dicas no total. Obrigado pelo apoio de todos.
+2. Atualizado o grupo de estudo QQ e recriado um grupo de 2.000 pessoas.
 
-### June 18, 2019
+### 18 de junho de 2019
 
-1. On a friend's suggestion, I added a tip QR code on the home page to see how many people are willing to pay for knowledge. Today I received tips from 7 friends in total, and I express thanks here. All income from tips will be donated through the Tencent Charity platform.
-2. The Django part (Day 41 to Day 55) has been updated to Day 47. The newest online content includes reports, logs, ORM query optimization, and middleware-related content, and the finished code of the voting app was synchronized to GitHub.
+1. Por sugestão de um amigo, adicionei um código QR de dica na página inicial para ver quantas pessoas estão dispostas a pagar pelo conhecimento. Hoje recebi dicas de 7 amigos no total, e agradeço aqui. Toda a renda das gorjetas será doada por meio da plataforma Tencent Charity.
+2. A parte Django (Dia 41 ao Dia 55) foi atualizada para o Dia 47. O conteúdo online mais recente inclui relatórios, logs, otimização de consulta ORM e conteúdo relacionado a middleware, e o código final do aplicativo de votação foi sincronizado com o GitHub.
