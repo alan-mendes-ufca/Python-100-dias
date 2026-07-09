@@ -1,12 +1,23 @@
 ## Python – 100 dias do iniciante ao mestre
 
-> **Autor**: Luo Hao
->
-> **Observação**: Se a visita ao GitHub for bastante lenta, você pode seguir minha conta Zhihu ([**Python-Jack**](https://www.zhihu.com/people/jackfrued)). A coluna [**Aprenda Python do zero**](https://zhuanlan.zhihu.com/c_1216656665569013760) aí, que corresponde aos primeiros 20 dias deste projeto, é mais indicada para iniciantes. Outras colunas como [**Pensamento de Dados e Pensamento Estatístico**](https://www.zhihu.com/column/c_1620074540456964096), [**Análise de dados baseada em Python**](https://www.zhihu.com/column/c_1217746527315496960) e [**Uma jornada de IA sempre que você quiser**](https://www.zhihu.com/column/c_1628900668109946880) também estão sendo atualizadas continuamente. Todos são bem-vindos para seguir, curtir e comentar. Atualmente, o grupo de comunicação QQ gratuito já está superlotado e as mensagens são muito confusas, por isso não há como responder uma por uma. Se você deseja estudar junto por check-in diário ou precisa de consulta paga, pode ingressar no grupo de comunicação paga. Novos usuários podem pagar através do código QR abaixo e depois adicionar meu WeChat pessoal (`jackfrued`). Depois disso, convidarei todos para o grupo de check-in de estudos pagos. Ao me adicionar no WeChat, anote seu nome e suas necessidades. Fornecerei ajuda dentro da minha capacidade.
->
-> <img src="res/pay_qr_code.png" style="zoom:32%;">
->
-> Alguns vídeos correspondentes a este projeto já foram sincronizados com [Bilibili](https://space.bilibili.com/1177252794). Se você estiver interessado, curta, jogue uma moeda e siga. Dê-lhe o suporte triplo com um clique!
+---
+> Tradução não oficial para português do projeto Python-100-Days.
+> Conteúdo original criado por [Luo Hao / jackfrued](https://github.com/jackfrued/Python-100-Days).
+> Esta versão tem finalidade de estudo e adaptação linguística. Consulte [NOTICE.md](./NOTICE.md) antes de redistribuir o material.
+---
+
+### Pré-requisitos
+
+- Python 3.12 é o ambiente de referência, com `pip` disponível no terminal.
+- Crie um ambiente virtual antes de instalar bibliotecas de terceiros:
+
+  ```bash
+  python -m venv .venv
+  source .venv/bin/activate  # Windows PowerShell: .venv\Scripts\Activate.ps1
+  python -m pip install --upgrade pip
+  ```
+
+- As dependências estão separadas por trilha em `requirements/`. Use `basics.txt`, `documents.txt` e `media.txt` nos dias 1 a 30; `advanced-python.txt` nos dias 31 a 35; `database.txt` nos dias 36 a 45; `web.txt` nos dias 46 a 60; `scraping.txt` nos dias 61 a 65; e `data.txt` nos dias 66 a 90. `requirements/all.txt` reúne as trilhas principais. Exercícios especializados mantêm instruções próprias em sua aula.
 
 ### Áreas de aplicação Python e análise de desenvolvimento de carreira
 
@@ -521,17 +532,20 @@ Várias sugestões para iniciantes:
 3. Usando o Celery em um projeto para tornar as tarefas assíncronas
 4. Usando o Celery em um projeto para implementar tarefas agendadas
 
-#### Dia 59 - [Teste de unidade](./Day46-60/59.unit-testing.md)
+#### Dia 59 - [Estratégia de testes: TDD, testes unitários e integração](./Day46-60/59.unit-testing.md)
+
+1. Pirâmide de testes e seleção do nível adequado
+2. Desenvolvimento orientado a testes (TDD)
+3. Testes unitários, de integração e ponta a ponta
+4. Mocks, cobertura e integração contínua
 
 #### Dia 60 - [Projeto ficando on-line](./Day46-60/60.project-deployment.md)
 
-1. Teste de unidade em Python
-2. Suporte ao framework Django para testes unitários
-3. Usando sistemas de controle de versão
-4. Configurando e usando uWSGI
-5. Separando recursos dinâmicos e estáticos e configurando o Nginx
-6. Configurando HTTPS
-7. Configurando a resolução de nomes de domínio
+1. Usando sistemas de controle de versão
+2. Configurando e usando uWSGI
+3. Separando recursos dinâmicos e estáticos e configurando o Nginx
+4. Configurando HTTPS
+5. Configurando a resolução de nomes de domínio
 
 ### Dia 61~65 - Coleta de dados da Web
 
@@ -836,7 +850,7 @@ Várias sugestões para iniciantes:
 
      ![](./res/pylint.png)
 
-   - Algumas "convenções" em Python (consulte [Convenções de programação Python – Como escrever código Python](./extras/Python-programming-conventions.md))
+    - Algumas "convenções" em Python (consulte [Convenções de programação Python – Como escrever código Python](./extras/python-programming-conventions.md))
 
    - Fatores que afetam a legibilidade do código:
      - Comentários insuficientes ou inexistentes

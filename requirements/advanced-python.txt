@@ -1,0 +1,8 @@
+# Bibliotecas dos exemplos de Python avancado (dias 31 a 35).
+-r database.txt
+-r media.txt
+aiohttp>=3.10,<4.0
+matplotlib>=3.8,<4.0
+numpy>=2.0,<3.0
+pycryptodome>=3.20,<4.0
+redis>=5.0,<7.0

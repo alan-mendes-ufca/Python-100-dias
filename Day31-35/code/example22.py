@@ -26,6 +26,10 @@ PRIMES = [
 
 def is_prime(n):
     """Verifique se um número é primo."""
+    if n < 2:
+        return False
+    if n == 2:
+        return True
     if n % 2 == 0:
         return False
 

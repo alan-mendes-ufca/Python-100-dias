@@ -7,6 +7,8 @@ from math import sqrt
 
 def is_prime(num):
     """Verifique se um número é primo."""
+    if num < 2:
+        return False
     for factor in range(2, int(sqrt(num)) + 1):
         if num % factor == 0:
             return False

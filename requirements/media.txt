@@ -1,0 +1,2 @@
+# Processamento de imagens (dias 21 a 35).
+Pillow>=10.0,<12.0

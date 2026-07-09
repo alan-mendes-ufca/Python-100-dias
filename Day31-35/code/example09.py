@@ -2,6 +2,7 @@
 Esses são recursos usados ​​em muitos lugares, mas separados da lógica central do negócio.
 Decoradores são uma forma prática do padrão proxy e da programação orientada a aspectos."""
 from functools import wraps
+import os
 from random import randint
 from time import time, sleep
 
@@ -34,10 +35,26 @@ def output_to_file(fname, duration):
 
 
 def output_to_db(fname, duration):
-    con = pymysql.connect(host='localhost', port=3306,
-                          database='test', charset='utf8',
-                          user='root', password='123456',
-                          autocommit=True)
+    user = os.getenv('MYSQL_USER')
+    password = os.getenv('MYSQL_PASSWORD')
+    if not user or password is None:
+        raise RuntimeError('Set MYSQL_USER and MYSQL_PASSWORD to enable database logging.')
+    options = {
+        'host': os.getenv('MYSQL_HOST', '127.0.0.1'),
+        'port': int(os.getenv('MYSQL_PORT', '3306')),
+        'database': os.getenv('MYSQL_DATABASE', 'test'),
+        'charset': 'utf8mb4',
+        'user': user,
+        'password': password,
+        'autocommit': True,
+        'connect_timeout': 5,
+        'read_timeout': 5,
+        'write_timeout': 5,
+    }
+    ssl_ca = os.getenv('MYSQL_SSL_CA')
+    if ssl_ca:
+        options['ssl'] = {'ca': ssl_ca, 'check_hostname': True}
+    con = pymysql.connect(**options)
     try:
         with con.cursor() as cursor:
             cursor.execute('insert into tb_record values (default, %s, %s)',

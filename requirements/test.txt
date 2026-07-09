@@ -1,0 +1,3 @@
+# Ferramentas opcionais para a aula de testes e desenvolvimento.
+coverage>=7.6,<8.0
+pytest>=8.0,<10.0

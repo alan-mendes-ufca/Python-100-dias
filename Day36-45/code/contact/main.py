@@ -1,19 +1,24 @@
-"""-- Crie um banco de dados chamado `address`
-criar endereço de banco de dados charset padrão utf8;
+"""Schema SQL para o banco de dados de contatos.
 
--- Mude para o banco de dados `address`
-usar endereço;
+CREATE DATABASE IF NOT EXISTS address CHARACTER SET utf8mb4;
+USE address;
 
--- Cria a tabela de contatos `tb_contacter`
-criar tabela tb_contacter
-(
-conid int comentário de incremento automático 'id',
-conname varchar(31) não comentário nulo 'nome',
-contel varchar(15) default '' comentar 'telefone',
-conemail varchar (255) padrão'' comentário 'e-mail',
-chave primária (conid)
-);"""
+CREATE TABLE IF NOT EXISTS tb_contacter (
+    conid INT NOT NULL AUTO_INCREMENT COMMENT 'id',
+    conname VARCHAR(31) NOT NULL COMMENT 'name',
+    contel VARCHAR(15) NOT NULL DEFAULT '' COMMENT 'phone',
+    conemail VARCHAR(255) NOT NULL DEFAULT '' COMMENT 'email',
+    PRIMARY KEY (conid)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+"""
+import os
+import re
+
 import pymysql
+
+
+EMAIL_PATTERN = re.compile(r'^[^@\s]+@[^@\s]+\.[^@\s]+$')
+PHONE_PATTERN = re.compile(r'^[0-9+() -]{1,15}$')
 
 INSERT_CONTACTER = """
 insert into tb_contacter (conname, contel, conemail) 
@@ -48,23 +53,63 @@ class Contacter(object):
         self.email = email
 
 
-def input_contacter_info():
-    name = input('Name: ')
-    tel = input('Mobile: ')
-    email = input('Email: ')
+def create_connection():
+    """Crie uma conexão MySQL com valores configurados pelo ambiente."""
+    user = os.getenv('MYSQL_USER')
+    password = os.getenv('MYSQL_PASSWORD')
+    if not user or password is None:
+        raise RuntimeError('Set MYSQL_USER and MYSQL_PASSWORD before starting the app.')
+    try:
+        port = int(os.getenv('MYSQL_PORT', '3306'))
+    except ValueError as err:
+        raise RuntimeError('MYSQL_PORT must be an integer.') from err
+    options = {
+        'host': os.getenv('MYSQL_HOST', '127.0.0.1'),
+        'port': port,
+        'user': user,
+        'password': password,
+        'database': os.getenv('MYSQL_DATABASE', 'address'),
+        'charset': 'utf8mb4',
+        'autocommit': True,
+        'connect_timeout': 5,
+        'read_timeout': 5,
+        'write_timeout': 5,
+        'cursorclass': pymysql.cursors.DictCursor,
+    }
+    ssl_ca = os.getenv('MYSQL_SSL_CA')
+    if ssl_ca:
+        options['ssl'] = {'ca': ssl_ca, 'check_hostname': True}
+    return pymysql.connect(**options)
+
+
+def input_contacter_info(allow_empty=False):
+    name = input('Name: ').strip()
+    tel = input('Mobile: ').strip()
+    email = input('Email: ').strip()
+    if not name and not allow_empty:
+        raise ValueError('Name is required.')
+    if len(name) > 31:
+        raise ValueError('Name must contain at most 31 characters.')
+    if tel and not PHONE_PATTERN.fullmatch(tel):
+        raise ValueError('Mobile must contain at most 15 phone characters.')
+    if email and (len(email) > 255 or not EMAIL_PATTERN.fullmatch(email)):
+        raise ValueError('Enter a valid email address.')
     return name, tel, email
 
 
 def add_new_contacter(con):
-    name, tel, email = input_contacter_info()
+    try:
+        name, tel, email = input_contacter_info()
+    except ValueError as err:
+        print(f'Invalid contact: {err}')
+        return
     try:
         with con.cursor() as cursor:
             if cursor.execute(INSERT_CONTACTER,
-                              (name, tel, email)) == 1:
+                               (name, tel, email)) == 1:
                 print('Contact added successfully!')
-    except pymysql.MySQLError as err:
-        print(err)
-        print('Failed to add contact!')
+    except pymysql.MySQLError:
+        print('Unable to add the contact.')
 
 
 def delete_contacter(con, contacter):
@@ -72,13 +117,16 @@ def delete_contacter(con, contacter):
         with con.cursor() as cursor:
             if cursor.execute(DELETE_CONTACTER, (contacter.id, )) == 1:
                 print('Contact deleted!')
-    except pymysql.MySQLError as err:
-        print(err)
-        print('Failed to delete contact!')
+    except pymysql.MySQLError:
+        print('Unable to delete the contact.')
 
 
 def edit_contacter_info(con, contacter):
-    name, tel, email = input_contacter_info()
+    try:
+        name, tel, email = input_contacter_info(allow_empty=True)
+    except ValueError as err:
+        print(f'Invalid contact: {err}')
+        return
     contacter.name = name or contacter.name
     contacter.tel = tel or contacter.tel
     contacter.email = email or contacter.email
@@ -88,20 +136,19 @@ def edit_contacter_info(con, contacter):
                               (contacter.name, contacter.tel,
                                contacter.email, contacter.id)) == 1:
                 print('Contact updated!')
-    except pymysql.MySQLError as err:
-        print(err)
-        print('Failed to update contact!')
+    except pymysql.MySQLError:
+        print('Unable to update the contact.')
 
 
 def show_contacter_detail(con, contacter):
     print('Name:', contacter.name)
     print('Mobile:', contacter.tel)
     print('Email:', contacter.email)
-    choice = input('Edit this contact? (yes|no) ')
+    choice = input('Edit this contact? (yes|no) ').strip().lower()
     if choice == 'yes':
         edit_contacter_info(con, contacter)
     else:
-        choice = input('Delete this contact? (yes|no) ')
+        choice = input('Delete this contact? (yes|no) ').strip().lower()
         if choice == 'yes':
             delete_contacter(con, contacter)
 
@@ -112,12 +159,20 @@ def show_search_result(con, cursor):
         contacter = Contacter(**row)
         contacters_list.append(contacter)
         print('[%d]: %s' % (index, contacter.name))
-    if len(contacters_list) > 0:
-        choice = input('View contact details? (yes|no) ')
-        if choice.lower() == 'yes':
+    if not contacters_list:
+        print('No contacts found.')
+        return
+    choice = input('View contact details? (yes|no) ').strip().lower()
+    if choice == 'yes':
+        try:
             index = int(input('Enter the index: '))
-            if 0 <= index < cursor.rowcount:
-                show_contacter_detail(con, contacters_list[index])
+        except ValueError:
+            print('Enter a valid contact index.')
+            return
+        if 0 <= index < len(contacters_list):
+            show_contacter_detail(con, contacters_list[index])
+        else:
+            print('Contact index is out of range.')
 
 
 def find_all_contacters(con):
@@ -131,7 +186,7 @@ def find_all_contacters(con):
                                (size, (page - 1) * size))
                 show_search_result(con, cursor)
                 if page * size < total:
-                    choice = input('Continue to the next page? (yes|no) ')
+                    choice = input('Continue to the next page? (yes|no) ').strip()
                     if choice.lower() == 'yes':
                         page += 1
                     else:
@@ -139,19 +194,22 @@ def find_all_contacters(con):
                 else:
                     print('No more pages.')
                     break
-    except pymysql.MySQLError as err:
-        print(err)
+    except pymysql.MySQLError:
+        print('Unable to retrieve contacts.')
 
 
 def find_contacters_by_name(con):
-    name = input('Contact name: ')
+    name = input('Contact name: ').strip()
+    if not name:
+        print('Contact name is required.')
+        return
     try:
         with con.cursor() as cursor:
             cursor.execute(SELECT_CONTACTERS_BY_NAME,
                            ('%' + name + '%', ))
             show_search_result(con, cursor)
-    except pymysql.MySQLError as err:
-        print(err)
+    except pymysql.MySQLError:
+        print('Unable to search contacts.')
 
 
 def find_contacters(con):
@@ -159,36 +217,45 @@ def find_contacters(con):
         print('1. View all contacts')
         print('2. Search contacts')
         print('3. Exit search')
-        choice = int(input('Enter your choice: '))
-        if choice == 1:
+        choice = input('Enter your choice: ').strip()
+        if choice == '1':
             find_all_contacters(con)
-        elif choice == 2:
+        elif choice == '2':
             find_contacters_by_name(con)
-        elif choice == 3:
+        elif choice == '3':
             break
+        else:
+            print('Choose 1, 2, or 3.')
 
 
 def main():
-    con = pymysql.connect(host='1.2.3.4', port=3306,
-                          user='yourname', passwd='yourpass',
-                          db='address', charset='utf8',
-                          autocommit=True,
-                          cursorclass=pymysql.cursors.DictCursor)
-    while True:
-        print('===== Address Book =====')
-        print('1. Create a contact')
-        print('2. Find contacts')
-        print('3. Exit')
-        print('===============')
-        choice = int(input('Choose: '))
-        if choice == 1:
-            add_new_contacter(con)
-        elif choice == 2:
-            find_contacters(con)
-        elif choice == 3:
-            con.close()
-            print('Thanks for using the address book. Bye!')
-            break
+    try:
+        con = create_connection()
+    except RuntimeError as err:
+        print(err)
+        return
+    except pymysql.MySQLError:
+        print('Unable to connect to the contacts database.')
+        return
+    try:
+        while True:
+            print('===== Address Book =====')
+            print('1. Create a contact')
+            print('2. Find contacts')
+            print('3. Exit')
+            print('===============')
+            choice = input('Choose: ').strip()
+            if choice == '1':
+                add_new_contacter(con)
+            elif choice == '2':
+                find_contacters(con)
+            elif choice == '3':
+                print('Thanks for using the address book. Bye!')
+                break
+            else:
+                print('Choose 1, 2, or 3.')
+    finally:
+        con.close()
 
 
 if __name__ == '__main__':

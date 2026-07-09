@@ -14,6 +14,8 @@ pickle - serialização baseada em bytes
 despejos / cargas"""
 import base64
 import json
+import os
+
 import redis
 
 from example02 import Person
@@ -26,9 +28,21 @@ class PersonJsonEncoder(json.JSONEncoder):
 
 
 def main():
-    cli = redis.StrictRedis(host='120.77.222.217', port=6379, 
-                            password='123123')
-    data = base64.b64decode(cli.get('guido'))
+    options = {
+        'host': os.getenv('REDIS_HOST', '127.0.0.1'),
+        'port': int(os.getenv('REDIS_PORT', '6379')),
+        'password': os.getenv('REDIS_PASSWORD'),
+        'socket_connect_timeout': 5,
+        'socket_timeout': 5,
+    }
+    if os.getenv('REDIS_TLS', '').lower() == 'true':
+        options.update(ssl=True, ssl_cert_reqs='required')
+    cli = redis.Redis(**options)
+    encoded_data = cli.get('guido')
+    if encoded_data is None:
+        print('Image "guido" was not found in Redis.')
+        return
+    data = base64.b64decode(encoded_data)
     with open('guido2.jpg', 'wb') as file_stream:
         file_stream.write(data)
     # with open('guido.jpg', 'rb') as file_stream:

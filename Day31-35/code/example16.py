@@ -47,7 +47,7 @@ def main():
     stu = Student(1234, 'Luo Hao')
     stu.gender = 'Male'
     # stu.birth = '1980-11-28'
-    print(stu.name, stu.birth)
+    print(stu.name, stu.gender)
     school = School('Qianfeng Education')
     school[1001] = Student(1001, 'Wang Dachui')
     school[1002] = Student(1002, 'Bai Yuanfang')

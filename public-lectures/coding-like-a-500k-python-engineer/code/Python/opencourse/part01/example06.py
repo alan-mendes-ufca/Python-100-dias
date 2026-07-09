@@ -14,10 +14,10 @@ for num in range(2, 100):
 print()
 
 # Classificação rápida de uma linha
-quick_sort = lambda items: len(items) and quick_sort([x for x in items[1:] if x < items[0]]) \
-                           + [items[0]] + quick_sort([x for x in items[1:] if x > items[0]]) \
-                           or items
-items = [57, 12, 35, 68, 99, 81, 70, 22]
+quick_sort = lambda items: quick_sort([x for x in items if x < items[0]]) \
+    + [x for x in items if x == items[0]] \
+    + quick_sort([x for x in items if x > items[0]]) if len(items) > 1 else items
+items = [57, 12, 35, 68, 99, 81, 70, 22, 35]
 print(quick_sort(items))
 
 # Gere a lista FizzBuzz

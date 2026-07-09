@@ -3,6 +3,8 @@ import cProfile
 
 # @perfil
 def is_prime(num):
+    if num < 2:
+        return False
     for factor in range(2, int(num ** 0.5) + 1):
         if num % factor == 0:
             return False
@@ -29,7 +31,6 @@ class PrimeIter:
         raise StopIteration()
 
 
-@profile
 def eat_memory():
     items = []
     for _ in range(1000000):

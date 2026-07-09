@@ -1,18 +1,19 @@
-import sys
-
-
 def fac(num):
-    if num == 0:
-        return 1
-    return num * fac(num - 1)
+    if not isinstance(num, int) or num < 0:
+        raise ValueError('num must be a non-negative integer')
+    result = 1
+    for factor in range(2, num + 1):
+        result *= factor
+    return result
 
 
 def main():
-    print(fac(59996))
+    num = 1000
+    result = fac(num)
+    print(f'{num}! has {len(str(result))} digits')
 
 
 if __name__ == '__main__':
-    sys.setrecursionlimit(60000)
     main()
 # for i in range(1000):
 #     print(f'{i}:'.rjust(3), fac(i))

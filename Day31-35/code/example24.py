@@ -7,24 +7,25 @@ import aiohttp
 
 
 async def fetch(session, url):
-    async with session.get(url, ssl=False) as resp:
+    async with session.get(url) as resp:
+        resp.raise_for_status()
         return await resp.text()
 
 
 async def main():
-    pattern = re.compile(r'\<title\>(?P<title>.*)\<\/title\>')
+    pattern = re.compile(r'<title>(?P<title>.*?)</title>', re.IGNORECASE | re.DOTALL)
     urls = ('https://www.python.org/',
             'https://git-scm.com/',
             'https://www.jd.com/',
             'https://www.taobao.com/',
             'https://www.douban.com/')
-    async with aiohttp.ClientSession() as session:
-        for url in urls:
-            html = await fetch(session, url)
-            print(pattern.search(html).group('title'))
+    timeout = aiohttp.ClientTimeout(total=10)
+    async with aiohttp.ClientSession(timeout=timeout) as session:
+        pages = await asyncio.gather(*(fetch(session, url) for url in urls))
+    for html in pages:
+        match = pattern.search(html)
+        print(match.group('title').strip() if match else 'No title found')
 
 
 if __name__ == '__main__':
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(main())
-    loop.close()
+    asyncio.run(main())

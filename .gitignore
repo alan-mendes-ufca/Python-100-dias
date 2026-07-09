@@ -6,6 +6,9 @@ venv
 .idea
 *.pyc
 __pycache__
+.coverage
+.pytest_cache
+htmlcov
 
 ### VisualStudioCode ###
 .vscode/*

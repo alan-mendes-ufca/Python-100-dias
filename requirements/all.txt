@@ -1,0 +1,9 @@
+# Instala as dependências das trilhas principais.
+# Exercícios especializados mantêm seus requisitos nas respectivas aulas.
+-r basics.txt
+-r advanced-python.txt
+-r web.txt
+-r data.txt
+-r documents.txt
+-r scraping.txt
+-r test.txt

@@ -1,0 +1,9 @@
+# Coleta e análise autorizada de dados da Web (dias 61 a 65).
+aiohttp>=3.10,<4.0
+aiofile>=3.9,<4.0
+beautifulsoup4>=4.12,<5.0
+lxml>=5.0,<7.0
+pyquery>=2.0,<3.0
+requests>=2.32,<3.0
+Scrapy>=2.11,<3.0
+selenium>=4.20,<5.0
