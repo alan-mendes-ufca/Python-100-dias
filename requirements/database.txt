@@ -1,3 +1,3 @@
 # MySQL (dias 36 a 45).
-PyMySQL>=1.1,<2.0
+PyMySQL>=1.2.0,<2.0
 cryptography>=42.0,<50.0
